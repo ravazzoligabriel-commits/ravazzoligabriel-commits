@@ -1,16 +1,30 @@
-## Hi there 👋
+# Gabriel Ravazzoli
 
-<!--
-**ravazzoligabriel-commits/ravazzoligabriel-commits** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+DevSecOps intern focused on automation, infrastructure and systems architecture.
 
-Here are some ideas to get you started:
+I'm currently working in an engineering environment, learning how real industrial systems are built, monitored and improved. My interests are mostly around automation, cloud, DevSecOps, backend systems and technical documentation.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I also enjoy drawing, visual thinking and turning complex ideas into clear diagrams.
+
+## Currently learning
+
+- Cloud fundamentals with Azure and AWS
+- DevSecOps practices
+- Automation workflows
+- Systems architecture
+- C4 modeling and technical diagrams
+
+## Interests
+
+- Automation
+- Cloud infrastructure
+- Backend development
+- Industrial systems
+- Observability
+- Security
+- Technical documentation
+- Visual communication
+
+## Projects
+
+I'm currently organizing my repositories. Soon, I'll publish projects related to automation, monitoring, DevSecOps pipelines and systems architecture.
