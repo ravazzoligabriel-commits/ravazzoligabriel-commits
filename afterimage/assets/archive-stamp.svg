@@ -1,0 +1,10 @@
+<svg width="256" height="112" viewBox="0 0 256 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="252" height="108" rx="2" stroke="#d83b32" stroke-width="2" opacity=".72"/>
+  <rect x="9" y="9" width="238" height="94" stroke="#e7e1d6" opacity=".16"/>
+  <path d="M11 78L244 25" stroke="#d83b32" stroke-width="8" opacity=".14"/>
+  <path d="M11 91L244 38" stroke="#d83b32" stroke-width="2" opacity=".24"/>
+  <text x="18" y="31" fill="#d83b32" font-size="10" font-family="monospace" letter-spacing="2">NODE 17</text>
+  <text x="18" y="61" fill="#e7e1d6" font-size="23" font-family="Georgia, serif" letter-spacing="1">AFTERIMAGE</text>
+  <text x="18" y="84" fill="#8d8880" font-size="9" font-family="monospace" letter-spacing="1.5">RECOVERED COPY / 2049.09.19</text>
+  <text x="205" y="98" fill="#d83b32" font-size="9" font-family="monospace">M.</text>
+</svg>
