@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0a0909" />
+  <title>AFTERIMAGE // recovered archive</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <main class="shell" id="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">◫</span><span>AFTERIMAGE</span></div>
+      <div class="status"><span class="pulse"></span> archive link unstable <span id="clock">00:00:00</span></div>
+    </header>
+
+    <section class="hero" id="hero">
+      <p class="eyebrow">ARCHIVE NODE 17 // RECOVERED 2049.09.19</p>
+      <h1>Most of the internet<br><em>did not survive.</em></h1>
+      <p class="lede">This copy remembers pieces it was never meant to keep.</p>
+      <button class="enter" id="enterBtn">ENTER RECOVERY</button>
+    </section>
+
+    <section class="workspace" id="workspace" hidden>
+      <aside class="rail" aria-label="Recovered fragments">
+        <button class="fragment active" data-panel="photos"><span>01</span> photographs</button>
+        <button class="fragment" data-panel="chat"><span>02</span> message thread</button>
+        <button class="fragment" data-panel="map"><span>03</span> city map</button>
+        <button class="fragment" data-panel="audio"><span>04</span> broken audio</button>
+        <button class="fragment danger" data-panel="sealed"><span>05</span> DO_NOT_OPEN</button>
+      </aside>
+
+      <section class="viewer">
+        <div class="viewer-head"><span id="panelTitle">fragment_01.photos</span><span class="integrity" id="integrity">integrity 82%</span></div>
+        <div class="panel active" data-panel-content="photos">
+          <div class="photo-grid">
+            <figure class="memory-card memory-a"><div class="placeholder"></div><figcaption>unknown station // 2028?</figcaption></figure>
+            <figure class="memory-card memory-b"><div class="placeholder"></div><figcaption>someone wrote “wait here”</figcaption></figure>
+            <figure class="memory-card memory-c"><div class="placeholder"></div><figcaption>timestamp checksum failed</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="panel" data-panel-content="chat">
+          <div class="chat-log" id="chatLog">
+            <p><span>00:14</span> are you still there?</p>
+            <p><span>00:16</span> the page keeps reopening by itself</p>
+            <p class="ghost"><span>--:--</span> typing…</p>
+          </div>
+          <div class="chat-input"><input id="chatInput" aria-label="Message the archive" placeholder="reply to a dead account"/><button id="sendBtn">send</button></div>
+        </div>
+
+        <div class="panel" data-panel-content="map">
+          <div class="map-card" id="mapCard"><div class="map-lines"></div><div class="map-pin">YOU ARE NOT HERE</div></div>
+        </div>
+
+        <div class="panel" data-panel-content="audio">
+          <div class="player"><button id="playBtn" aria-label="Play recovered audio">▶</button><div class="track"><strong>REC_2049_LAST_SIGNAL.wav</strong><div class="wave" id="wave"></div></div><span id="timecode">00:00</span></div>
+        </div>
+
+        <div class="panel" data-panel-content="sealed">
+          <div class="sealed"><p>FILE HEADER CORRUPTED</p><h2>THIS FRAGMENT REQUESTED<br/>TO REMAIN DELETED.</h2><button id="openSealed">OPEN ANYWAY</button><pre id="terminal"></pre></div>
+        </div>
+      </section>
+    </section>
+
+    <footer><span>memory pressure: <b id="pressure">12%</b></span><span>© nobody // recovered copy</span></footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
