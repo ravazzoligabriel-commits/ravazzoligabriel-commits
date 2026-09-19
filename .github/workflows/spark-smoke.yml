@@ -1,4 +1,4 @@
-name: Spark 1.3 smoke test
+name: Spark 1.3 bridge
 
 on:
   issues:
@@ -6,8 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  spark-smoke:
-    if: startsWith(github.event.issue.title, '[spark-smoke]') || github.event_name == 'workflow_dispatch'
+  spark:
+    if: >-
+      (github.event_name == 'workflow_dispatch') ||
+      (github.actor == github.repository_owner && startsWith(github.event.issue.title, '[spark]'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -28,11 +30,21 @@ jobs:
       - name: Show OpenCode version
         run: opencode --version
 
+      - name: Build prompt
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "issues" ]]; then
+            jq -r '.issue.body // "Reply exactly with: SPARK_BRIDGE_OK"' "$GITHUB_EVENT_PATH" > spark-prompt.txt
+          else
+            printf '%s\n' 'Reply exactly with: SPARK_BRIDGE_OK' > spark-prompt.txt
+          fi
+          echo "prompt_bytes=$(wc -c < spark-prompt.txt)"
+
       - name: Run Muse Spark 1.3
-        id: spark
         shell: bash
         run: |
           set +e
+          prompt="$(cat spark-prompt.txt)"
           {
             echo "model=opencode/muse-spark-1.3-contributor-free"
             echo "started_at=$(date -u +%FT%TZ)"
@@ -40,7 +52,7 @@ jobs:
             echo
             opencode run \
               --model opencode/muse-spark-1.3-contributor-free \
-              "Reply exactly with: SPARK_1_3_OK"
+              "$prompt"
             code=$?
             echo
             echo "exit_code=$code"
@@ -53,6 +65,8 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: spark-smoke-result
-          path: spark-result.txt
+          name: spark-result-${{ github.run_id }}
+          path: |
+            spark-prompt.txt
+            spark-result.txt
           if-no-files-found: warn
