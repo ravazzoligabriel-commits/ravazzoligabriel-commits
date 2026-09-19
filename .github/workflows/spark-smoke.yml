@@ -1,13 +1,13 @@
 name: Spark 1.3 smoke test
 
 on:
-  push:
-    paths:
-      - ".github/workflows/spark-smoke.yml"
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 jobs:
   spark-smoke:
+    if: startsWith(github.event.issue.title, '[spark-smoke]') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -38,6 +38,7 @@ jobs:
           {
             echo "model=opencode/muse-spark-1.3-contributor-free"
             echo "started_at=$(date -u +%FT%TZ)"
+            echo "key_present=$([[ -n \"$OPENCODE_API_KEY\" ]] && echo yes || echo no)"
             echo
             opencode run --standalone \
               --model opencode/muse-spark-1.3-contributor-free \
