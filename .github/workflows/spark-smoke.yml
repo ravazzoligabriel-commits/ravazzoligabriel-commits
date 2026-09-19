@@ -9,15 +9,17 @@ jobs:
   spark:
     if: >-
       (github.event_name == 'workflow_dispatch') ||
-      (github.actor == github.repository_owner && startsWith(github.event.issue.title, '[spark]'))
+      (github.actor == github.repository_owner && (startsWith(github.event.issue.title, '[spark]') || startsWith(github.event.issue.title, '[afterimage]')))
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     permissions:
       contents: read
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ startsWith(github.event.issue.title, '[afterimage]') && 'afterimage-lab' || github.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -61,6 +63,13 @@ jobs:
           } 2>&1 | tee spark-result.txt
           exit ${PIPESTATUS[0]}
 
+      - name: Capture workspace changes
+        if: always()
+        shell: bash
+        run: |
+          git status --short > agent-status.txt || true
+          git diff --binary -- afterimage > agent.patch || true
+
       - name: Upload result
         if: always()
         uses: actions/upload-artifact@v4
@@ -69,4 +78,7 @@ jobs:
           path: |
             spark-prompt.txt
             spark-result.txt
+            agent-status.txt
+            agent.patch
+            afterimage/
           if-no-files-found: warn
