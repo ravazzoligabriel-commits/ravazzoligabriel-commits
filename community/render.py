@@ -3,10 +3,24 @@ import hashlib
 import html
 import json
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import urlencode, quote
 from PIL import Image, ImageDraw, ImageFont
 
 BEGIN, END = '<!-- COMMUNITY-GBA:START -->', '<!-- COMMUNITY-GBA:END -->'
+
+def leaderboard(ledger):
+    """Rank the complete durable ledger, including turns older than public history."""
+    players={}
+    for record in ledger.values():
+        if record['status']!='applied':
+            continue
+        login=record['player']
+        identity=login.lower()
+        if identity not in players:
+            players[identity]=dict(player=login,commands=0,profile=f'https://github.com/{quote(login,safe="-")}')
+        players[identity]['commands']+=1
+    ranked=sorted(players.values(),key=lambda player:(-player['commands'],player['player'].lower()))[:10]
+    return [dict(rank=rank,**player) for rank,player in enumerate(ranked,1)]
 
 def control_art(assets):
     """Small transparent linked images work in GitHub's sanitized README HTML."""
@@ -84,6 +98,10 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
                    if mode=='firered' else 'A community GBA homebrew adventure with one shared save.')
     preview = '\nDevelopment preview: test turns run when the maintainer pushes engine changes. Automatic visitor turns activate after merging the PR.\n' if branch!='main' else ''
     image_url=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/{name}'
+    leaders=leaderboard(session.data['ledger'])
+    ranking_rows='\n'.join(f"| {entry['rank']} | [@{html.escape(entry['player'])}]({entry['profile']}) | {entry['commands']} |" for entry in leaders)
+    if not ranking_rows:
+        ranking_rows='| — | Be the first player! | 0 |'
     block=f'''{BEGIN}
 <div align="center">
 
@@ -107,6 +125,17 @@ The screen below is the latest game snapshot. It changes when a command is proce
 | {action} | {player} | {session.data['total']} |
 
 </div>
+
+### Global leaderboard · Top 10
+
+The most active players in this shared adventure, ranked by **all-time accepted commands**.
+Updated automatically after commands are processed. Rejected commands do not count; ties are ordered alphabetically by username.
+
+| Rank | Player | Accepted commands |
+| :---: | :--- | ---: |
+{ranking_rows}
+
+Only players with accepted commands are listed. Join the adventure to earn your place!
 
 ### How to play
 
@@ -148,4 +177,5 @@ Some dialogues need more than one **A** command. Progress is saved automatically
                 last=last,screen_sha256=screen_hash,mode=mode)
     (assets/'status.json').write_text(json.dumps(public,indent=2)+'\n')
     (assets/'history.json').write_text(json.dumps(list(session.data['ledger'].values())[-200:],indent=2)+'\n')
+    (assets/'leaderboard.json').write_text(json.dumps(leaders,indent=2)+'\n')
     return public

@@ -26,6 +26,17 @@ The screen below is the latest game snapshot. It changes when a command is proce
 
 </div>
 
+### Global leaderboard · Top 10
+
+The most active players in this shared adventure, ranked by **all-time accepted commands**.
+Updated automatically after commands are processed. Rejected commands do not count; ties are ordered alphabetically by username.
+
+| Rank | Player | Accepted commands |
+| :---: | :--- | ---: |
+| 1 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | 4 |
+
+Only players with accepted commands are listed. Join the adventure to earn your place!
+
 ### How to play
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
