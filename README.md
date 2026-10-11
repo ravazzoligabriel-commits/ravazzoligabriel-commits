@@ -8,7 +8,7 @@ Uma partida real de **Pokémon FireRed**, jogada em comunidade pelo GitHub. Todo
 
 A tela abaixo é a última imagem do jogo. Ela muda quando um comando é processado; atualize a página para ver o resultado.
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-51b0ef6a3d8aa5e3.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-bbdd247a5c2ebf9f.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 
 
