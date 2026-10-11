@@ -28,6 +28,7 @@ class Emulator:
         self.library_hash = hashlib.sha256(Path(library).read_bytes()).hexdigest()
         self.lib = C.CDLL(str(Path(library).resolve()))
         self.keys, self.frames, self.image, self.pixel_format = set(), 0, None, 0
+        self._pending_video = None
         # Idle-loop detection learns transient CPU optimizations that are not
         # part of the GBA snapshot. Disable that learning across fresh runners.
         self._options = {b'mgba_idle_optimization': b"Don't Remove", b'mgba_frameskip': b'0'}
@@ -87,7 +88,16 @@ class Emulator:
         if not data or data == C.c_void_p(-1).value:
             return
         raw = C.string_at(data, pitch * height)
-        if self.pixel_format == 1:
+        # Keep the actual last video callback. Converting every intermediate
+        # frame in Python wastes most of the runner's time during boot/holds.
+        self._pending_video = raw, width, height, pitch, self.pixel_format
+
+    def _capture_last_video(self):
+        if self._pending_video is None:
+            return
+        raw, width, height, pitch, pixel_format = self._pending_video
+        self._pending_video = None
+        if pixel_format == 1:
             self.image = Image.frombytes('RGB', (width,height), raw, 'raw', 'BGRX', pitch)
         else:
             pixels = bytearray()
@@ -95,7 +105,7 @@ class Emulator:
                 for x in range(width):
                     offset = y*pitch + x*2
                     value = int.from_bytes(raw[offset:offset+2], 'little')
-                    if self.pixel_format == 2:
+                    if pixel_format == 2:
                         r,g,b = (value>>11)&31, (value>>5)&63, value&31
                         pixels.extend((r*255//31,g*255//63,b*255//31))
                     else:
@@ -124,6 +134,7 @@ class Emulator:
             raise ValueError('Frame count must be 1..3600')
         for _ in range(frames):
             self.lib.retro_run()
+        self._capture_last_video()
         self.frames += frames
         return self.getSessionState()
 
