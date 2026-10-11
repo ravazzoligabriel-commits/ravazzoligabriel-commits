@@ -20,11 +20,17 @@ class GameInfo(C.Structure):
 class SystemInfo(C.Structure):
     _fields_ = [('name', C.c_char_p), ('version', C.c_char_p), ('extensions', C.c_char_p), ('fullpath', C.c_bool), ('block', C.c_bool)]
 
+class Variable(C.Structure):
+    _fields_ = [('key', C.c_char_p), ('value', C.c_char_p)]
+
 class Emulator:
     def __init__(self, library):
         self.library_hash = hashlib.sha256(Path(library).read_bytes()).hexdigest()
         self.lib = C.CDLL(str(Path(library).resolve()))
         self.keys, self.frames, self.image, self.pixel_format = set(), 0, None, 0
+        # Idle-loop detection learns transient CPU optimizations that are not
+        # part of the GBA snapshot. Disable that learning across fresh runners.
+        self._options = {b'mgba_idle_optimization': b"Don't Remove", b'mgba_frameskip': b'0'}
         self._directory = C.create_string_buffer(str(Path(library).resolve().parent).encode())
         self._callbacks = [ENV(self._environment), VIDEO(self._video), AUDIO(lambda l,r: None),
                            BATCH(lambda data,n: n), POLL(lambda: None), INPUT(self._input)]
@@ -53,6 +59,13 @@ class Emulator:
         self.closed = False
 
     def _environment(self, command, data):
+        if command == 15:  # GET_VARIABLE
+            variable = C.cast(data, C.POINTER(Variable)).contents
+            value = self._options.get(variable.key)
+            if value is not None:
+                variable.value = value
+                return True
+            return False
         if command == 10:  # SET_PIXEL_FORMAT
             self.pixel_format = C.cast(data, C.POINTER(C.c_int))[0]
             return self.pixel_format in (0,1,2)

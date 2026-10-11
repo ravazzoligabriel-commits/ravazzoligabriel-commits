@@ -19,7 +19,7 @@ class FireRedIntegrationTests(unittest.TestCase):
             e.loadGame(rom)
             session = Session(e, boot_frames=3600, release_frames=60)
             self.assertEqual(e.image.size, (240, 160))
-            self.assertGreater(len(set(e.image.getdata())), 20)
+            self.assertGreater(len(set(e.image.get_flattened_data())), 20)
             snapshot = session.snapshot()
             battery = e.battery()
             self.assertEqual(len(battery), 131072)
@@ -27,6 +27,7 @@ class FireRedIntegrationTests(unittest.TestCase):
                          user={'login': 'integration-test'}, created_at='2026-10-11T00:00:00Z')
             session.process(issue)
             expected = hashlib.sha256(e.image.tobytes()).hexdigest()
+            expected_image = e.image.copy()
             expected_battery = e.battery()
             e.close()
             e = Emulator(core)
@@ -34,6 +35,15 @@ class FireRedIntegrationTests(unittest.TestCase):
             session = Session(e, snapshot, release_frames=60)
             self.assertEqual(e.battery(), battery)
             session.process(issue)
+            if hashlib.sha256(e.image.tobytes()).hexdigest() != expected:
+                # Private diagnostic pixels only; never put cartridge/state in logs.
+                diagnostic = rom.parent / 'diagnostics'
+                diagnostic.mkdir(exist_ok=True)
+                expected_image.save(diagnostic / 'expected.png')
+                e.image.save(diagnostic / 'restored.png')
+                if os.environ.get('GBA_DIAGNOSTICS_PUSH') == 'true':
+                    from community.worker import commit
+                    commit(rom.parent, ['diagnostics'], 'Record private restoration diagnostics', 'main')
             self.assertEqual(hashlib.sha256(e.image.tobytes()).hexdigest(), expected)
             self.assertEqual(e.battery(), expected_battery)
             self.assertEqual(e.frames, 3672)
