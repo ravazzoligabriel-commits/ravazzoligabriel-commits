@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
+    inputs:
+      operator_plan:
+        description: Apply reviewed private trainer preparation once
+        type: boolean
+        default: false
   push:
     branches: [feat/community-gba, main]
     paths: ['community/**', 'homebrew/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba.yml']
@@ -64,13 +69,18 @@ jobs:
         env:
           TARGET_BRANCH: ${{ github.event_name == 'issues' && github.event.repository.default_branch || github.ref_name }}
           CANARY: ${{ github.ref_name != github.event.repository.default_branch }}
+          OPERATOR_PLAN: ${{ github.event_name == 'workflow_dispatch' && inputs.operator_plan || false }}
         run: |
           if [[ "$CANARY" == 'true' ]]; then
             python -m community.worker --core runtime/core/mgba_libretro.so --rom runtime/demo.gba --branch "$TARGET_BRANCH" --canary --publish
           elif [[ "$GAME_MODE" == 'firered' ]]; then
             python -m community.private_storage
             python -c "import hashlib,os; from pathlib import Path; assert len(os.environ['ROM_SHA256'])==64 and hashlib.sha256(Path('private/cartridge.gba').read_bytes()).hexdigest()==os.environ['ROM_SHA256'], 'Private ROM digest mismatch'"
-            python -m community.worker --core runtime/core/mgba_libretro.so --rom private/cartridge.gba --state-root private --state-branch main --branch "$TARGET_BRANCH" --mode firered --publish
+            operator_args=()
+            if [[ "$OPERATOR_PLAN" == 'true' ]]; then
+              operator_args=(--operator-plan private/operator-plan.json)
+            fi
+            python -m community.worker --core runtime/core/mgba_libretro.so --rom private/cartridge.gba --state-root private --state-branch main --branch "$TARGET_BRANCH" --mode firered --publish "${operator_args[@]}"
           else
             python -m community.worker --core runtime/core/mgba_libretro.so --rom runtime/demo.gba --branch "$TARGET_BRANCH" --publish
           fi

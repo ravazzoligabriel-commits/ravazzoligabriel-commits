@@ -29,6 +29,7 @@ def main():
     parser.add_argument('--branch',required=True)
     parser.add_argument('--mode',choices=['homebrew','firered'],default='homebrew')
     parser.add_argument('--publish',action='store_true')
+    parser.add_argument('--operator-plan',help='Private, reviewed maintainer input sequence')
     parser.add_argument('--canary',action='store_true',help='Development [gba-test] Issue queue; isolated branch state')
     args=parser.parse_args()
     root=Path.cwd(); state_root=Path(args.state_root).resolve()
@@ -46,6 +47,12 @@ def main():
         session=Session(emulator,previous,
                         boot_frames=3600 if args.mode=='firered' else 120,
                         release_frames=60 if args.mode=='firered' else 2)
+        prepared=False
+        if args.operator_plan:
+            if args.canary or args.mode!='firered' or args.branch!='main' or os.environ.get('GITHUB_EVENT_NAME')!='workflow_dispatch':
+                raise ValueError('Operator preparation requires explicit default-branch manual dispatch')
+            from community.operator import apply_plan
+            prepared=apply_plan(session,path,args.operator_plan,os.environ['GITHUB_ACTOR'])
         if args.canary:
             if args.branch=='main':
                 raise ValueError('Canary runs must use a development branch')
@@ -58,7 +65,7 @@ def main():
         pending=[i for i in queue if str(i['number']) not in session.data['ledger']][:50]
         for issue in pending:
             session.process(issue)
-        if pending or previous is None:
+        if pending or previous is None or prepared:
             path.parent.mkdir(parents=True,exist_ok=True)
             temp=path.with_suffix('.tmp')
             temp.write_bytes(encode(session.snapshot(),key)); temp.replace(path)
