@@ -115,6 +115,14 @@ class RealEmulatorTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.e.advanceFrames(3601)
 
+    def test_closed_core_fails_safely(self):
+        self.e.close()
+        self.e.close()
+        for operation in (lambda:self.e.advanceFrames(1), lambda:self.e.state(),
+                          lambda:self.e.restore(b''), lambda:self.e.loadGame(self.root/'demo.gba')):
+            with self.assertRaises(ValueError):
+                operation()
+
     def test_authenticated_snapshot_rejects_corruption_and_mismatch(self):
         key=bytes(range(32)); snapshot=self.s.snapshot()
         data=encode(snapshot,key)

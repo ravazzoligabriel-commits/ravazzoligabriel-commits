@@ -28,16 +28,18 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
     name = f'console-{screen_hash[:16]}.png'
     frame.save(assets/name)
     # A changing filename gives Camo/CDN a new URL. Retain current and previous.
-    existing = sorted(assets.glob('console-*.png'),key=lambda p:p.stat().st_mtime,reverse=True)
-    for old in existing[2:]:
+    existing = sorted((p for p in assets.glob('console-*.png') if p.name!=name),
+                      key=lambda p:(p.stat().st_mtime,p.name),reverse=True)
+    for old in existing[1:]:
         old.unlink()
     last = session.data['last']
     player = html.escape(last['player']) if last else '—'
     action = f"{last['button']} · {last['duration']} frames" if last else 'Boot / waiting for first command'
     controls=[]
     prefix = '[gba]' if branch=='main' else '[gba-test]'
+    default_frames = 12 if mode=='firered' else 60
     for button in ('UP','DOWN','LEFT','RIGHT','A','B','L','R','START','SELECT'):
-        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} 12',body='Submit this Issue to add one turn to the shared adventure. The title is the command; the body is ignored.'))
+        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} {default_frames}',body='Submit this Issue to add one turn to the shared adventure. The title is the command; the body is ignored.'))
         controls.append(f'[{button}]({url})')
     title = 'POKÉMON FIRERED' if mode=='firered' else 'GBA PIXEL ADVENTURE'
     status = 'FireRed · private cartridge installation' if mode=='firered' else 'Open homebrew demo · FireRed cartridge not installed'
@@ -65,7 +67,7 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 </div>
 
 One shared save. Click a button, sign in to GitHub, then **submit the prefilled Issue**.
-Each turn holds a button for 12 emulated frames; edit the title for 1–120 frames.
+Each control holds a button for {default_frames} emulated frames; edit the title for 1–120 frames.
 Wait for processing and refresh this page. The image is a snapshot, not live video.
 One accepted command per player per 30 seconds. Actions can take minutes.
 

@@ -14,6 +14,9 @@ Click a README control, sign in and submit the prefilled Issue. Titles use exact
 an optional duration of 1–120 frames (default 12). Bodies, comments, labels and
 attachments are never executable input. Each turn releases the key for two frames
 after the hold. A frame is approximately 1/60 second; menus may need several turns.
+The homebrew README links use a 60-frame hold to accommodate its simple ARM
+software renderer; FireRed links use 12. An input may leave pixels unchanged if
+the game ignores it or has not completed a redraw; the actual state still advances.
 
 The worker handles up to 50 new Issues in ascending Issue-number order and closes
 them after successfully publishing. Accepted and rejected turns appear in

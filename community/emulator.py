@@ -50,6 +50,7 @@ class Emulator:
             raise ValueError('This engine requires mGBA')
         self.lib.retro_init()
         self.loaded = False
+        self.closed = False
 
     def _environment(self, command, data):
         if command == 10:  # SET_PIXEL_FORMAT
@@ -90,6 +91,10 @@ class Emulator:
             self.image = Image.frombytes('RGB',(width,height),bytes(pixels))
 
     def loadGame(self, path):
+        if self.closed:
+            raise ValueError('Create a new emulator after closing the core')
+        if self.loaded:
+            raise ValueError('Close the current core before loading another cartridge')
         self.rom_hash = hashlib.sha256(Path(path).read_bytes()).hexdigest()
         self._rom = C.create_string_buffer(Path(path).read_bytes())
         self._rom_path = str(Path(path).resolve()).encode()
@@ -100,6 +105,8 @@ class Emulator:
         return self.getSessionState()
 
     def advanceFrames(self, frames):
+        if not self.loaded:
+            raise ValueError('Load a cartridge before advancing frames')
         if type(frames) is not int or not 1 <= frames <= 3600:
             raise ValueError('Frame count must be 1..3600')
         for _ in range(frames):
@@ -121,6 +128,8 @@ class Emulator:
         return self.advanceFrames(2)
 
     def state(self):
+        if not self.loaded:
+            raise ValueError('Load a cartridge before serializing state')
         n = self.lib.retro_serialize_size()
         buffer = C.create_string_buffer(n)
         if not self.lib.retro_serialize(buffer,n):
@@ -128,6 +137,8 @@ class Emulator:
         return buffer.raw
 
     def restore(self, state):
+        if not self.loaded:
+            raise ValueError('Load a cartridge before restoring state')
         # mGBA libretro delays reset until first frame/serialization. Complete
         # that setup BEFORE unserialize, or the next run resets restored RAM.
         self.lib.retro_serialize_size()
@@ -191,7 +202,11 @@ class Emulator:
                     rom_sha256=getattr(self,'rom_hash',None),frames=self.frames)
 
     def close(self):
+        if self.closed:
+            return
         if self.loaded:
             self.lib.retro_unload_game()
+            self.loaded = False
         self.lib.retro_deinit()
+        self.closed = True
 
