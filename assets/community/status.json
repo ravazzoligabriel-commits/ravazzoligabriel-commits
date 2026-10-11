@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 160,
-  "total": 2,
+  "frames": 282,
+  "total": 3,
   "last": {
-    "issue": 29,
+    "issue": 30,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-11T22:35:58Z",
+    "created": "2026-10-11T22:39:18Z",
     "status": "applied",
-    "button": "A",
-    "duration": 12,
-    "state_sha256": "fe469685c3244d51f0dd2f337d5cddfa994d977a3d1c14384723f81319d1c148"
+    "button": "B",
+    "duration": 120,
+    "state_sha256": "cdd98d396534f1639064154f664ad4e7bcf6a8866c9ddb0431ec7445343172b0"
   },
-  "screen_sha256": "0b3615430428b8a64ff1b5ac2836008612fc8488c35e66a01315290e953cc0cb",
+  "screen_sha256": "01ef8e01d30f3f9f31210c577df509d873efc7b94df62f1f5e5cc577153ea1f9",
   "mode": "homebrew"
 }

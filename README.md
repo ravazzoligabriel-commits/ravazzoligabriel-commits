@@ -4,25 +4,25 @@
 ## GBA PIXEL ADVENTURE
 **COMMUNITY ADVENTURE**
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/feat/community-gba/assets/community/console-0b3615430428b8a6.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/feat/community-gba/assets/community/console-01ef8e01d30f3f9f.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 Open homebrew demo · FireRed cartridge not installed
 
 Development preview: test turns run when the maintainer pushes engine changes. Automatic visitor turns activate after merging the PR.
 
 
-[UP](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+UP+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [DOWN](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+DOWN+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [LEFT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+LEFT+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [RIGHT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+RIGHT+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.)
+[UP](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+UP+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [DOWN](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+DOWN+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [LEFT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+LEFT+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [RIGHT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+RIGHT+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.)
 
-[A](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+A+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [B](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+B+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [L](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+L+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [R](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+R+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [START](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+START+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [SELECT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+SELECT+12&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.)
+[A](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+A+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [B](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+B+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [L](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+L+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [R](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+R+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [START](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+START+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.) · [SELECT](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba-test%5D+SELECT+60&body=Submit+this+Issue+to+add+one+turn+to+the+shared+adventure.+The+title+is+the+command%3B+the+body+is+ignored.)
 
 | LAST ACTION | CURRENT PLAYER | TOTAL COMMANDS |
 | :---: | :---: | :---: |
-| A · 12 frames | ravazzoligabriel-commits | 2 |
+| B · 120 frames | ravazzoligabriel-commits | 3 |
 
 </div>
 
 One shared save. Click a button, sign in to GitHub, then **submit the prefilled Issue**.
-Each turn holds a button for 12 emulated frames; edit the title for 1–120 frames.
+Each control holds a button for 60 emulated frames; edit the title for 1–120 frames.
 Wait for processing and refresh this page. The image is a snapshot, not live video.
 One accepted command per player per 30 seconds. Actions can take minutes.
 
