@@ -3,14 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 28652,
-  "total": 3,
+  "frames": 28724,
+  "total": 4,
   "last": {
-    "button": "Trainer setup",
-    "duration": 24728,
+    "issue": 35,
     "player": "ravazzoligabriel-commits",
-    "status": "applied"
+    "created": "2026-10-11T23:39:20Z",
+    "status": "applied",
+    "button": "B",
+    "duration": 12,
+    "state_sha256": "f04c59cc20f4e3b3554a4be83df4f8799f53c7ff5a84f4317317aa50615a9b5f"
   },
-  "screen_sha256": "bbdd247a5c2ebf9f5f4617d05c6d308b5d9b33e7bbbb4b15a625b2949d32677c",
+  "screen_sha256": "c61705735ca715f27458d86bdcbd2e6abdd33f6a76d50ad855f426df6d4eed5b",
   "mode": "firered"
 }
