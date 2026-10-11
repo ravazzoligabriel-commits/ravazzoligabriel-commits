@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "issue": 32,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-10-11T23:07:00Z",
+    "status": "applied",
+    "button": "START",
+    "duration": 12,
+    "state_sha256": "f7def8204cf51d226897e1d3032b33288985667ed5cea4fc9c910aaad39aabdb"
+  }
+]

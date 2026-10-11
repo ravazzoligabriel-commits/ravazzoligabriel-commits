@@ -4,7 +4,7 @@
 ## POKÉMON FIRERED
 **COMMUNITY ADVENTURE**
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-8a3da51e3a78e9f6.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-fa9b11c45fdf6eb6.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 FireRed · private cartridge installation
 
@@ -15,7 +15,7 @@ FireRed · private cartridge installation
 
 | LAST ACTION | CURRENT PLAYER | TOTAL COMMANDS |
 | :---: | :---: | :---: |
-| Boot / waiting for first command | — | 0 |
+| START · 12 frames | ravazzoligabriel-commits | 1 |
 
 </div>
 
