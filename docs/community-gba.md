@@ -1,4 +1,31 @@
-# Community GBA — operation and deployment
+# FireRed no perfil — uma partida compartilhada
+
+Este projeto transforma o perfil do GitHub em uma aventura coletiva de Pokémon
+FireRed. Todos controlam o mesmo treinador e continuam o mesmo save. O emulador
+mGBA roda na automação do GitHub; o README exibe a última imagem real produzida
+pelo jogo. A ROM e o estado completo ficam em um repositório privado. Visitantes
+participam enviando comandos, sem instalar nada nem receber a ROM.
+
+**Como participar:** clique em um botão do README, entre no GitHub e confirme em
+**Create / Submit new issue**. Aguarde a automação fechar a Issue, volte ao perfil
+e atualize a página. A direção move o personagem ou o cursor, **A** confirma e
+avança diálogos, **B** cancela, **START** abre o menu e **SELECT** usa o item
+registrado quando disponível. **L/R** abrem a ajuda na configuração padrão do
+FireRed; as opções do jogo podem alterar esse comportamento.
+
+O clique envia 12 frames de botão pressionado. Para ajustar a duração, edite o
+título: `[gba] RIGHT 60`, por exemplo. Aceita-se um comando por conta a cada
+30 segundos, com duração de 1 a 120 frames. Espere a nova tela antes de decidir
+o próximo movimento: outro visitante pode ter jogado nesse intervalo.
+
+Os controles são imagens clicáveis inspiradas no GBA. Cada botão abre uma Issue;
+o GitHub não executa o emulador nem captura o teclado diretamente no README.
+O avanço acontece por comandos e pode levar minutos para aparecer. O estado
+fica salvo automaticamente entre comandos, inclusive durante diálogos e menus.
+
+Referência do comportamento de ajuda: [código do sistema de ajuda do FireRed](https://github.com/pret/pokefirered/blob/master/src/help_system.c).
+
+## Technical operation and deployment
 
 This repository runs an actual mGBA core and shows its video output in the README.
 The live profile runs the user-supplied **Pokémon FireRed USA** cartridge from

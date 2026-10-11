@@ -146,14 +146,14 @@ class RealEmulatorTests(unittest.TestCase):
         original='# My profile\n\nExisting content.\n'
         (self.root/'README.md').write_text(original)
         render(self.root,self.e,self.s,'owner/repo','main')
-        text=(self.root/'README.md').read_text()
+        text=(self.root/'README.md').read_text(encoding='utf-8')
         self.assertIn(original,text)
-        self.assertIn('submit the prefilled Issue',text)
+        self.assertIn('Create / Submit new issue',text)
         self.assertNotIn('PALLET TOWN',text)
         first=list((self.root/'assets/community').glob('console-*.png'))[0].name
         self.s.process(self.issue())
         render(self.root,self.e,self.s,'owner/repo','main')
-        self.assertEqual((self.root/'README.md').read_text().count(original),1)
+        self.assertEqual((self.root/'README.md').read_text(encoding='utf-8').count(original),1)
         self.assertEqual(len(list((self.root/'assets/community').glob('console-*.png'))),2)
         self.assertNotEqual(first, max((self.root/'assets/community').glob('console-*.png'),key=lambda p:p.stat().st_mtime).name)
 
