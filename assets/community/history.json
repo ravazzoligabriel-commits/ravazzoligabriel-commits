@@ -27,19 +27,19 @@
     "status": "applied"
   },
   {
+    "button": "B",
+    "created": "2026-10-11T23:39:20Z",
+    "duration": 12,
     "issue": 35,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-11T23:39:20Z",
-    "status": "applied",
-    "button": "B",
-    "duration": 12,
-    "state_sha256": "f04c59cc20f4e3b3554a4be83df4f8799f53c7ff5a84f4317317aa50615a9b5f"
+    "state_sha256": "f04c59cc20f4e3b3554a4be83df4f8799f53c7ff5a84f4317317aa50615a9b5f",
+    "status": "applied"
   },
   {
+    "created": "2026-10-11T23:39:34Z",
     "issue": 36,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-11T23:39:34Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
   }
 ]
