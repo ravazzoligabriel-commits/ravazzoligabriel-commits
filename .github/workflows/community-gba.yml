@@ -48,7 +48,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: ${{ vars.GBA_PRIVATE_REPOSITORY }}
-          token: ${{ secrets.GBA_PRIVATE_TOKEN }}
+          token: ${{ secrets.GBA_PRIVATE_TOKEN || github.token }}
           ssh-key: ${{ secrets.GBA_PRIVATE_SSH_KEY }}
           ref: main
           path: private
