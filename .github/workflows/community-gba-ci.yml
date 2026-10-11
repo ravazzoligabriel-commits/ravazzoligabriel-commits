@@ -1,0 +1,22 @@
+name: Community GBA verification
+on:
+  push:
+    branches: [feat/community-gba, main]
+    paths: ['community/**', 'homebrew/**', 'tests/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba*.yml']
+  pull_request:
+    paths: ['community/**', 'homebrew/**', 'tests/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba*.yml']
+permissions:
+  contents: read
+jobs:
+  real-emulator:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-mgba
+      - name: Real mGBA integration suite
+        env:
+          MGBA_CORE: runtime/core/mgba_libretro.so
+        run: python -m unittest discover -s tests -v
