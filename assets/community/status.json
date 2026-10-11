@@ -1,0 +1,11 @@
+{
+  "emulator": "mGBA",
+  "version": "0.11-212-7a12d6d",
+  "core_sha256": "a365cb892f6e72e8e52900a37a65a0524f47e237b58dbba5086bcbda2fabd79d",
+  "rom_sha256": null,
+  "frames": 120,
+  "total": 0,
+  "last": null,
+  "screen_sha256": "8b48bd81be7827367d91f75aefe59d5cbe22d7c7d6042b3a0031bf63413f4d3e",
+  "mode": "homebrew"
+}
