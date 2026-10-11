@@ -1,11 +1,19 @@
 {
   "emulator": "mGBA",
-  "version": "0.11-212-7a12d6d",
-  "core_sha256": "a365cb892f6e72e8e52900a37a65a0524f47e237b58dbba5086bcbda2fabd79d",
+  "version": "0.10.5",
+  "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 120,
-  "total": 0,
-  "last": null,
-  "screen_sha256": "8b48bd81be7827367d91f75aefe59d5cbe22d7c7d6042b3a0031bf63413f4d3e",
+  "frames": 146,
+  "total": 1,
+  "last": {
+    "issue": 28,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-10-11T22:33:32Z",
+    "status": "applied",
+    "button": "RIGHT",
+    "duration": 24,
+    "state_sha256": "e36a4c2ab2832ae16b52e94e52acc05707a272b59ec896a5bad21dfaa19051ea"
+  },
+  "screen_sha256": "0b3615430428b8a64ff1b5ac2836008612fc8488c35e66a01315290e953cc0cb",
   "mode": "homebrew"
 }
