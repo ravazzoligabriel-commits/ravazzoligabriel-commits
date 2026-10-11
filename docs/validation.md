@@ -72,5 +72,42 @@ The first new session advances 3,600 frames; empty queue sweeps preserve its sta
 The private integration test boots the real cartridge, applies START, restores a
 snapshot in a new core and checks matching resulting pixels and battery bytes.
 It also checks raw battery export/import. It does not claim an in-game menu save
-or arrival at Pallet Town. Hosted installation results are recorded below once
-verified.
+or arrival at Pallet Town. Hosted installation results are recorded below.
+
+
+## Live FireRed profile activation
+
+[PR #31](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/pull/31)
+was merged and the default-branch profile now runs the supplied private cartridge.
+[Successful activation](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/runs/38182979720)
+passed 19 general tests plus the separate private FireRed integration test before
+publishing. The same complete 20-test suite passed locally in 5.171 seconds.
+
+The first activation exposed a required checkout token input even for SSH;
+checkout now receives the workflow token while private Git transfer uses the
+repository-scoped deploy key. A stronger replay test then exposed a shallow
+snapshot ledger copy: applying a later live turn mutated an earlier in-memory
+snapshot and made replay appear duplicated. Snapshots now deep-copy metadata,
+and an additional test verifies ledger independence. The FireRed replay test
+passes with the actual pinned production core; its assertions were preserved.
+
+Video conversion now processes the last actual callback in each frame batch;
+the core still executes all requested frames. On the successful hosted run,
+the general suite took four seconds, private FireRed verification five seconds,
+and initial real-frame publication six seconds. No gameplay pixels are synthesized.
+
+Three browser-submitted controls completed in separate hosted executions:
+
+| Issue | Input | Stored frames | Accepted turns | Hosted run |
+| --- | --- | ---: | ---: | --- |
+| [#32](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/32) | START 12 | 3672 | 1 | [38183056564](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/runs/38183056564) |
+| [#33](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/33) | A 12 | 3744 | 2 | [38183119663](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/runs/38183119663) |
+| [#34](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/34) | A 120 | 3924 | 3 | [38183192795](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/runs/38183192795) |
+
+All three Issues closed automatically after publication. The actual PNG SHA-256
+changed on each turn. The private encrypted snapshot was independently decrypted
+and checked against the public frame count, accepted counter and Issue IDs; its
+battery export is 131,072 bytes. The storage repository's private visibility was
+verified through the authenticated GitHub API. Public Git trees contain no ROM
+or proprietary raw state files. Browser rendering confirms the controls, attribution
+and preserved original profile content.

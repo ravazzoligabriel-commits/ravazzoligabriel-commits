@@ -22,9 +22,10 @@ not rely on Actions concurrency slots as a durable queue.
 
 ## Experimentally supported / requires installation
 
-FireRed is compatible with the selected emulator family, but **no FireRed ROM was
-provided or tested**. Cartridge-specific progression, dialogs and final graphics
-must be tested after a legally obtained ROM is privately installed. We do not
+The supplied FireRed USA cartridge is installed privately and has been tested
+with actual mGBA boot, bounded input, snapshot continuation in a new core and
+battery export/import. Browser-submitted Issues update the live profile; see
+[validation](validation.md) for hosted evidence. We do not
 claim that Pallet Town or any particular game location has been reached. Location
 decoding would require a ROM-revision-specific memory adapter and is intentionally
 absent rather than inferred from a screenshot.

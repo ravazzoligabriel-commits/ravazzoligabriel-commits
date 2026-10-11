@@ -1,11 +1,13 @@
 # Community GBA — operation and deployment
 
 This repository runs an actual mGBA core and shows its video output in the README.
-The shipped cartridge is **Pixel Adventure**, original MIT-licensed ARM homebrew.
+The live profile runs the user-supplied **Pokémon FireRed USA** cartridge from
+private storage. The public repository also ships the source of **Pixel Adventure**,
+original MIT-licensed ARM homebrew for reproducible tests.
 Move the explorer using direction buttons; A/B change its color and START resets
 its position. This deliberately small cartridge tests real GBA MMIO, video, input
-and SRAM. It is not Pokémon FireRed. The adapter can accept a privately supplied
-FireRed cartridge without distributing it. See [feasibility](feasibility.md).
+and SRAM. The demo is separate from the privately installed FireRed session.
+See [feasibility](feasibility.md) and [validation](validation.md).
 
 ## Play
 
