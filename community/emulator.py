@@ -2,6 +2,7 @@
 import ctypes as C
 import hashlib
 import json
+import struct
 from pathlib import Path
 from PIL import Image
 
@@ -136,18 +137,47 @@ class Emulator:
         self.keys.clear()
 
     def persistSave(self, path):
-        n = self.lib.retro_get_memory_size(0)
-        data = C.string_at(self.lib.retro_get_memory_data(0),n) if n else b''
+        data = self.battery()
         Path(path).write_bytes(data)
-        return dict(bytes=n, sha256=hashlib.sha256(data).hexdigest())
+        return dict(bytes=len(data), sha256=hashlib.sha256(data).hexdigest())
+
+    @staticmethod
+    def _savedata_section(state):
+        # mGBA's GBA state struct is 0x61000 bytes, followed by <tag,size,offset>
+        # extdata entries. Tag 2 is SAVEDATA. This is pinned/documented in
+        # include/mgba/internal/gba/serialize.h and src/core/serialize.c.
+        # After unserialize, libretro's exported SRAM pointer can be stale:
+        # mGBA masks savedata with the snapshot's copy. Read the authoritative
+        # savedata clone in a fresh serialization, not that frontend pointer.
+        position = 0x61000
+        for _ in range(300):
+            if position + 16 > len(state):
+                break
+            tag,size,offset = struct.unpack_from('<IIQ',state,position)
+            if tag == 0:
+                return None
+            if offset+size > len(state):
+                raise ValueError('Invalid mGBA savedata extent')
+            if tag == 2:
+                return offset,size
+            position += 16
+        raise ValueError('Unsupported mGBA GBA snapshot format')
+
+    def battery(self):
+        state = self.state()
+        section = self._savedata_section(state)
+        return state[section[0]:section[0]+section[1]] if section else b''
 
     def loadSave(self, path):
         data = Path(path).read_bytes()
-        n = self.lib.retro_get_memory_size(0)
+        state = bytearray(self.state())
+        section = self._savedata_section(state)
+        n = section[1] if section else 0
         if len(data) != n:
             raise ValueError('Battery save size mismatch')
         if n:
-            C.memmove(self.lib.retro_get_memory_data(0),data,n)
+            state[section[0]:section[0]+n] = data
+            self.restore(bytes(state))
         return dict(bytes=n,sha256=hashlib.sha256(data).hexdigest())
 
     def captureScreenshot(self, path):

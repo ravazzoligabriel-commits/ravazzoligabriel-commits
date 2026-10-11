@@ -54,7 +54,7 @@ class RealEmulatorTests(unittest.TestCase):
         self.assertEqual(battery,self.s._battery())
         self.assertEqual(self.s.data['total'],1)
         self.s.process(self.issue(2,'LEFT','other'))
-        self.assertNotEqual(self.s._battery(),battery)
+        self.assertNotEqual(self.s._battery()[:3],battery[:3])
         self.assertEqual(self.s.data['total'],2)
 
     def test_duplicate_issue_is_exactly_once(self):

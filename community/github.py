@@ -16,12 +16,12 @@ class GitHub:
             body=response.read()
             return json.loads(body) if body else None
 
-    def queue(self):
+    def queue(self, prefix='[gba]'):
         issues=[]
         page=1
         while True:
             batch=self.request('GET',f'/repos/{self.repository}/issues?state=open&sort=created&direction=asc&per_page=100&page={page}')
-            issues.extend(i for i in batch if 'pull_request' not in i and i['title'].startswith('[gba]'))
+            issues.extend(i for i in batch if 'pull_request' not in i and i['title'].startswith(prefix))
             if len(batch)<100:
                 break
             page+=1

@@ -54,18 +54,13 @@ class Session:
             emulator.advanceFrames(120)
 
     def _battery(self):
-        import ctypes as C
-        n = self.emulator.lib.retro_get_memory_size(0)
-        ptr = self.emulator.lib.retro_get_memory_data(0)
-        return C.string_at(ptr,n) if n else b''
+        return self.emulator.battery()
 
     def _restore_battery(self, data):
-        import ctypes as C
-        n = self.emulator.lib.retro_get_memory_size(0)
-        if len(data) != n:
-            raise ValueError('Snapshot battery size mismatch')
-        if n:
-            C.memmove(self.emulator.lib.retro_get_memory_data(0),data,n)
+        # libretro restores the SAVEDATA extension into mGBA's live save mask.
+        # The redundant battery export verifies that restored SRAM agrees.
+        if data != self.emulator.battery():
+            raise ValueError('Snapshot battery content mismatch')
 
     def process(self, issue):
         event = str(issue['number'])

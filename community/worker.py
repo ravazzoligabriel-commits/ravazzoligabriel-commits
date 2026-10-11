@@ -29,7 +29,7 @@ def main():
     parser.add_argument('--branch',required=True)
     parser.add_argument('--mode',choices=['homebrew','firered'],default='homebrew')
     parser.add_argument('--publish',action='store_true')
-    parser.add_argument('--canary',action='store_true',help='Owner-only synthetic API test, no public issues consumed')
+    parser.add_argument('--canary',action='store_true',help='Development [gba-test] Issue queue; isolated branch state')
     args=parser.parse_args()
     root=Path.cwd(); state_root=Path(args.state_root).resolve()
     if args.mode=='firered' and state_root==root:
@@ -46,8 +46,8 @@ def main():
         if args.canary:
             if args.branch=='main':
                 raise ValueError('Canary runs must use a development branch')
-            queue=[dict(number=900000001,title='[gba] RIGHT 24',user={'login':'integration-test'},created_at='2026-10-11T00:00:00Z'),
-                   dict(number=900000002,title='[gba] A 12',user={'login':'integration-test-2'},created_at='2026-10-11T00:01:00Z')]
+            queue=api.queue('[gba-test]')
+            queue=[dict(i,title='[gba]'+i['title'][10:]) for i in queue]
         else:
             queue=api.queue()
         # Persistent issues are the queue, not workflow pending slots. A batch
@@ -68,10 +68,9 @@ def main():
             else:
                 paths=['README.md','assets/community','.community/session.enc']
             commit(root,paths,f'Update community GBA screen ({session.data["total"]} turns)',args.branch)
-            if not args.canary:
-                for issue in queue:
-                    if str(issue['number']) in session.data['ledger']:
-                        api.close(issue['number'])
+            for issue in queue:
+                if str(issue['number']) in session.data['ledger']:
+                    api.close(issue['number'])
         print(f'mGBA verified: {session.data["total"]} accepted turns; {len(pending)} new queue items')
     finally:
         emulator.close()
