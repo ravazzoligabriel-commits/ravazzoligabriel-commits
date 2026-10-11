@@ -2,13 +2,12 @@
 <div align="center">
 
 ## POKÉMON FIRERED
-**ONE ADVENTURE · ONE SAVE · THE WHOLE COMMUNITY**
 
-A real game of **Pokémon FireRed**, played together through GitHub. Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.
-
-The screen below is the latest game snapshot. It changes when a command is processed; refresh the page to see the result.
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/header-firered-v1.svg" alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />
 
 <img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-c61705735ca715f2.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+
+<sub>Latest game snapshot · Send a command, wait for processing, then refresh.</sub>
 
 
 
@@ -38,6 +37,8 @@ Updated automatically after commands are processed. Rejected commands do not cou
 Only players with accepted commands are listed. Join the adventure to earn your place!
 
 ### How to play
+
+A real game of **Pokémon FireRed**, played together through GitHub. Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.

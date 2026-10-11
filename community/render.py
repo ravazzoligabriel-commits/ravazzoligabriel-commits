@@ -98,6 +98,9 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
                    if mode=='firered' else 'A community GBA homebrew adventure with one shared save.')
     preview = '\nDevelopment preview: test turns run when the maintainer pushes engine changes. Automatic visitor turns activate after merging the PR.\n' if branch!='main' else ''
     image_url=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/{name}'
+    opening=(f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/header-firered-v1.svg" '
+             'alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />'
+             if mode=='firered' else description)
     leaders=leaderboard(session.data['ledger'])
     ranking_rows='\n'.join(f"| {entry['rank']} | [@{html.escape(entry['player'])}]({entry['profile']}) | {entry['commands']} |" for entry in leaders)
     if not ranking_rows:
@@ -106,13 +109,12 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 <div align="center">
 
 ## {title}
-**ONE ADVENTURE · ONE SAVE · THE WHOLE COMMUNITY**
 
-{description}
-
-The screen below is the latest game snapshot. It changes when a command is processed; refresh the page to see the result.
+{opening}
 
 <img src="{image_url}" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+
+<sub>Latest game snapshot · Send a command, wait for processing, then refresh.</sub>
 
 {preview}
 
@@ -138,6 +140,8 @@ Updated automatically after commands are processed. Rejected commands do not cou
 Only players with accepted commands are listed. Join the adventure to earn your place!
 
 ### How to play
+
+{description}
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
