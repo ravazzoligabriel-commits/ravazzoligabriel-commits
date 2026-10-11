@@ -12,8 +12,10 @@ FireRed cartridge without distributing it. See [feasibility](feasibility.md).
 Click a README control, sign in and submit the prefilled Issue. Titles use exactly
 `[gba] RIGHT 12`, with one of UP, DOWN, LEFT, RIGHT, A, B, L, R, START, SELECT and
 an optional duration of 1–120 frames (default 12). Bodies, comments, labels and
-attachments are never executable input. Each turn releases the key for two frames
-after the hold. A frame is approximately 1/60 second; menus may need several turns.
+attachments are never executable input. Homebrew turns release the key for two
+frames; FireRed turns release it for 60 frames so animations can progress after
+the input. FireRed's first boot runs 3,600 frames to complete the opening sequence.
+A frame is approximately 1/60 second; menus may need several turns.
 The homebrew README links use a 60-frame hold to accommodate its simple ARM
 software renderer; FireRed links use 12. An input may leave pixels unchanged if
 the game ignores it or has not completed a redraw; the actual state still advances.
@@ -50,7 +52,10 @@ uploaded as artifacts or dependency caches. Raw local files are ignored by Git.
 1. Create a **private** storage repository. On its `main` branch place your
    cartridge at `cartridge.gba` using a private transfer. Do not create a public
    release, artifact, Issue attachment or fork containing the cartridge.
-2. Create a fine-grained token restricted to that repository with Contents
+2. Install a read/write SSH deploy key restricted to that private repository,
+   and save its private key as profile Actions secret `GBA_PRIVATE_SSH_KEY`.
+   This installation uses that repository-scoped key. Alternatively, create a
+   fine-grained token restricted to that repository with Contents
    read/write. Store it as Actions secret `GBA_PRIVATE_TOKEN` on this profile repo.
    A dedicated GitHub App installation token is preferable for a production setup.
 3. Set `GBA_PRIVATE_REPOSITORY=owner/private-storage`, `GBA_GAME_MODE=firered`, and
@@ -59,8 +64,8 @@ uploaded as artifacts or dependency caches. Raw local files are ignored by Git.
 4. Run the workflow on `main`. A new session is created in the private repository
    under `.community/session.enc`; the public demo state remains separate. Only
    the approved display pixels and public command metadata are published.
-5. Play through boot/menu dialogs with Issues. Validate FireRed's battery save,
-   reload and navigation. No FireRed-specific test results are claimed here.
+5. Play through boot/menu dialogs with Issues. See `validation.md` for the
+   cartridge-specific results from this installation.
 
 The public screenshot necessarily contains displayed game artwork. The cartridge,
 BIOS, extracted assets, SRAM and savestate stay private. No proprietary BIOS is

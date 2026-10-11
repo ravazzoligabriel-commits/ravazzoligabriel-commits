@@ -73,4 +73,3 @@ freshness is not guaranteed. The raw PNG and screen SHA provide inspectable evid
 - [Actions secure use](https://docs.github.com/en/actions/reference/security/secure-use)
 - [mGBA scripting support](https://mgba.io/2022/05/29/scripting/)
 - [Pinned mGBA libretro implementation](https://github.com/mgba-emu/mgba/blob/26b7884bc25a5933960f3cdcd98bac1ae14d42e2/src/platform/libretro/libretro.c)
-

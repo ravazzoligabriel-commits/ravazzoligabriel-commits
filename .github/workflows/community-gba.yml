@@ -44,13 +44,20 @@ jobs:
           MGBA_CORE: runtime/core/mgba_libretro.so
         run: python -m unittest discover -s tests -v
       - name: Load private FireRed cartridge and state
-        if: env.GAME_MODE == 'firered' && github.event_name != 'push'
+        if: env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: ${{ vars.GBA_PRIVATE_REPOSITORY }}
           token: ${{ secrets.GBA_PRIVATE_TOKEN }}
+          ssh-key: ${{ secrets.GBA_PRIVATE_SSH_KEY }}
           ref: main
           path: private
+      - name: Verify privately supplied FireRed before publication
+        if: env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
+        env:
+          MGBA_CORE: runtime/core/mgba_libretro.so
+          FIRERED_ROM: private/cartridge.gba
+        run: python -m unittest discover -s tests -p test_firered.py -v
       - name: Process durable Issue queue and publish actual frame
         shell: bash
         env:
@@ -60,7 +67,7 @@ jobs:
           if [[ "$CANARY" == 'true' ]]; then
             python -m community.worker --core runtime/core/mgba_libretro.so --rom runtime/demo.gba --branch "$TARGET_BRANCH" --canary --publish
           elif [[ "$GAME_MODE" == 'firered' ]]; then
-            python -c "import os; from community.github import GitHub; r=GitHub(os.environ['PRIVATE_REPOSITORY'],os.environ['PRIVATE_TOKEN']).request('GET','/repos/'+os.environ['PRIVATE_REPOSITORY']); assert r['private'], 'FireRed storage repository must be private'"
+            python -m community.private_storage
             python -c "import hashlib,os; from pathlib import Path; assert len(os.environ['ROM_SHA256'])==64 and hashlib.sha256(Path('private/cartridge.gba').read_bytes()).hexdigest()==os.environ['ROM_SHA256'], 'Private ROM digest mismatch'"
             python -m community.worker --core runtime/core/mgba_libretro.so --rom private/cartridge.gba --state-root private --state-branch main --branch "$TARGET_BRANCH" --mode firered --publish
           else

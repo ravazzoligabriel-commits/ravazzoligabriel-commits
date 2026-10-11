@@ -43,7 +43,9 @@ def main():
     emulator=Emulator(args.core)
     try:
         emulator.loadGame(args.rom)
-        session=Session(emulator,previous)
+        session=Session(emulator,previous,
+                        boot_frames=3600 if args.mode=='firered' else 120,
+                        release_frames=60 if args.mode=='firered' else 2)
         if args.canary:
             if args.branch=='main':
                 raise ValueError('Canary runs must use a development branch')

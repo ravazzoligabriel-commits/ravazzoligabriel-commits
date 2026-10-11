@@ -87,4 +87,3 @@ One accepted command per player per 30 seconds. Actions can take minutes.
     (assets/'status.json').write_text(json.dumps(public,indent=2)+'\n')
     (assets/'history.json').write_text(json.dumps(list(session.data['ledger'].values())[-200:],indent=2)+'\n')
     return public
-

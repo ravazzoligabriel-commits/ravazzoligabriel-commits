@@ -29,4 +29,3 @@ class GitHub:
 
     def close(self, issue):
         self.request('PATCH',f'/repos/{self.repository}/issues/{issue}',{'state':'closed'})
-

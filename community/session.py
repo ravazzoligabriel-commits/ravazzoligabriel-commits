@@ -36,8 +36,9 @@ def decode(data, key):
     return json.loads(zlib.decompress(AESGCM(key).decrypt(data[:12],data[12:],AAD)))
 
 class Session:
-    def __init__(self, emulator, snapshot=None):
+    def __init__(self, emulator, snapshot=None, boot_frames=120, release_frames=2):
         self.emulator = emulator
+        self.release_frames = release_frames
         self.data = snapshot or dict(schema=1,rom=emulator.rom_hash,version=emulator.version,
                                      frames=0,total=0,ledger={},last=None)
         if snapshot:
@@ -51,7 +52,7 @@ class Session:
             from PIL import Image
             emulator.image = Image.frombytes('RGB',(240,160),base64.b64decode(snapshot['video']))
         else:
-            emulator.advanceFrames(120)
+            emulator.advanceFrames(boot_frames)
 
     def _battery(self):
         return self.emulator.battery()
@@ -81,7 +82,7 @@ class Session:
                 old_image = self.emulator.image.copy()
                 try:
                     self.emulator.holdButton(button,frames)
-                    self.emulator.advanceFrames(2)
+                    self.emulator.advanceFrames(self.release_frames)
                     # Assert serializability before committing metadata.
                     result = self.emulator.state()
                 except Exception:
@@ -102,4 +103,3 @@ class Session:
                     state=base64.b64encode(self.emulator.state()).decode(),
                     battery=base64.b64encode(self._battery()).decode(),
                     video=base64.b64encode(self.emulator.image.tobytes()).decode())
-

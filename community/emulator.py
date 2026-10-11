@@ -209,4 +209,3 @@ class Emulator:
             self.loaded = False
         self.lib.retro_deinit()
         self.closed = True
-
