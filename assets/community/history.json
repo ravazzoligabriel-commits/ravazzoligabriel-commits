@@ -1,11 +1,20 @@
 [
   {
+    "button": "START",
+    "created": "2026-10-11T23:07:00Z",
+    "duration": 12,
     "issue": 32,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-11T23:07:00Z",
+    "state_sha256": "f7def8204cf51d226897e1d3032b33288985667ed5cea4fc9c910aaad39aabdb",
+    "status": "applied"
+  },
+  {
+    "issue": 33,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-10-11T23:07:59Z",
     "status": "applied",
-    "button": "START",
+    "button": "A",
     "duration": 12,
-    "state_sha256": "f7def8204cf51d226897e1d3032b33288985667ed5cea4fc9c910aaad39aabdb"
+    "state_sha256": "441da018381e2a7539f16799c6fcff794417b861a1e9e3d3e3dddcecc164e020"
   }
 ]
