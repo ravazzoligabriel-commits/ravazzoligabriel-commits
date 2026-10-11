@@ -57,6 +57,7 @@ jobs:
         env:
           MGBA_CORE: runtime/core/mgba_libretro.so
           FIRERED_ROM: private/cartridge.gba
+          GBA_DIAGNOSTICS_PUSH: 'true'
         run: python -m unittest discover -s tests -p test_firered.py -v
       - name: Process durable Issue queue and publish actual frame
         shell: bash
