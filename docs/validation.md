@@ -59,9 +59,18 @@ The simple homebrew renderer can miss very short holds while drawing. Homebrew
 README links now hold for 60 frames; FireRed links retain 12 frames. Both remain
 bounded to 120 and capture only actual emulator output.
 
-## Explicitly untested
+## Supplied FireRed cartridge
 
-No legally usable FireRed cartridge was supplied. No FireRed gameplay, Pallet
-Town location, cartridge-specific battery behavior or private production
-installation is claimed as tested. Private storage checks and deployment
-instructions are implemented; installing the cartridge is a later user step.
+The user supplied a FireRed USA cartridge on 11 October 2026. Local mGBA execution
+verified the original intro and actual title screen at 240×160, with 131,072-byte
+battery storage. The cartridge was installed in private storage; a repository-scoped
+read/write SSH deploy key gives the workflow access without a broad account token.
+Neither ROM binaries nor raw savestates are published in this repository.
+
+FireRed receives 60 released frames after each input to let animations progress.
+The first new session advances 3,600 frames; empty queue sweeps preserve its state.
+The private integration test boots the real cartridge, applies START, restores a
+snapshot in a new core and checks matching resulting pixels and battery bytes.
+It also checks raw battery export/import. It does not claim an in-game menu save
+or arrival at Pallet Town. Hosted installation results are recorded below once
+verified.
