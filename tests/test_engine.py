@@ -63,6 +63,13 @@ class RealEmulatorTests(unittest.TestCase):
         self.assertEqual(frames,self.e.frames)
         self.assertEqual(state,self.e.state())
 
+    def test_snapshot_ledger_is_independent_of_future_turns(self):
+        snapshot = self.s.snapshot()
+        self.s.process(self.issue())
+        self.assertEqual(snapshot['ledger'], {})
+        self.assertEqual(snapshot['total'], 0)
+        self.assertIsNone(snapshot['last'])
+
     def test_conflicting_commands_are_serial(self):
         self.s.process(self.issue(1,'RIGHT','one'))
         right=self.s._battery()

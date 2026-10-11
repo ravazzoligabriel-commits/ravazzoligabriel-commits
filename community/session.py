@@ -1,5 +1,6 @@
 """Authenticated snapshots; a Git commit is the durable transaction boundary."""
 import base64
+import copy
 import hashlib
 import json
 import os
@@ -99,7 +100,9 @@ class Session:
         return record
 
     def snapshot(self):
-        return dict(self.data, frames=self.emulator.frames,
+        # A snapshot owns its ledger: later live commands must not mutate a
+        # previously captured snapshot or turn replays into false duplicates.
+        return dict(copy.deepcopy(self.data), frames=self.emulator.frames,
                     state=base64.b64encode(self.emulator.state()).decode(),
                     battery=base64.b64encode(self._battery()).decode(),
                     video=base64.b64encode(self.emulator.image.tobytes()).decode())
