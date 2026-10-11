@@ -2,56 +2,56 @@
 <div align="center">
 
 ## POKÉMON FIRERED
-**UMA AVENTURA · UM SAVE · TODA A COMUNIDADE**
+**ONE ADVENTURE · ONE SAVE · THE WHOLE COMMUNITY**
 
-Uma partida real de **Pokémon FireRed**, jogada em comunidade pelo GitHub. Todo mundo controla o **mesmo personagem e o mesmo save**: cada comando continua a aventura de onde o último visitante parou.
+A real game of **Pokémon FireRed**, played together through GitHub. Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.
 
-A tela abaixo é a última imagem do jogo. Ela muda quando um comando é processado; atualize a página para ver o resultado.
+The screen below is the latest game snapshot. It changes when a command is processed; refresh the page to see the result.
 
 <img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-c61705735ca715f2.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 
 
-**CONTROLES — clique no botão que quer enviar**
+**CONTROLS — click the button you want to send**
 
-<p><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+L+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+L+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar L"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-l-v1.png" alt="L" width="120" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="176" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+R+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+R+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar R"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-r-v1.png" alt="R" width="120" /></a></p>
-<p><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="48" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+UP+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+UP+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar UP"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-up-v1.png" alt="UP" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="248" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+A+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+A+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar A"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-a-v1.png" alt="A" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="24" height="1" /><br />
-<a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+LEFT+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+LEFT+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar LEFT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-left-v1.png" alt="LEFT" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-center-v1.png" alt="Centro do direcional" width="48" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+RIGHT+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+RIGHT+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar RIGHT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-right-v1.png" alt="RIGHT" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="152" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+B+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+B+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar B"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-b-v1.png" alt="B" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="72" height="1" /><br />
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="48" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+DOWN+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+DOWN+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar DOWN"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-down-v1.png" alt="DOWN" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="320" height="1" /></p>
-<p><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+SELECT+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+SELECT+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar SELECT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-select-v1.png" alt="SELECT" width="96" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="24" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+START+12&amp;body=Confirme+em+Create+%2F+Submit+new+issue+para+enviar+START+ao+jogo+compartilhado.+Aguarde+o+processamento+e+atualize+o+perfil." title="Enviar START"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-start-v1.png" alt="START" width="96" /></a></p>
+<p><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+L+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+L+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send L"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-l-v1.png" alt="L" width="120" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="176" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+R+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+R+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send R"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-r-v1.png" alt="R" width="120" /></a></p>
+<p><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="48" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+UP+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+UP+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send UP"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-up-v1.png" alt="UP" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="248" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+A+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+A+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send A"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-a-v1.png" alt="A" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="24" height="1" /><br />
+<a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+LEFT+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+LEFT+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send LEFT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-left-v1.png" alt="LEFT" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-center-v1.png" alt="D-pad center" width="48" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+RIGHT+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+RIGHT+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send RIGHT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-right-v1.png" alt="RIGHT" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="152" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+B+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+B+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send B"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-b-v1.png" alt="B" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="72" height="1" /><br />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="48" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+DOWN+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+DOWN+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send DOWN"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-down-v1.png" alt="DOWN" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="320" height="1" /></p>
+<p><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+SELECT+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+SELECT+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send SELECT"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-select-v1.png" alt="SELECT" width="96" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="24" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+START+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+START+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send START"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-start-v1.png" alt="START" width="96" /></a></p>
 
-| ÚLTIMA AÇÃO | ÚLTIMO JOGADOR | COMANDOS DA COMUNIDADE |
+| LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
 | B · 12 frames | ravazzoligabriel-commits | 4 |
 
 </div>
 
-### Como jogar
+### How to play
 
-1. **Escolha um botão acima.** Ele abre uma Issue com o comando já preenchido.
-2. Entre na sua conta do GitHub e clique em **Create / Submit new issue** para confirmar o envio. Só abrir a Issue não envia o comando.
-3. **Aguarde o processamento.** A automação executa o botão, salva o progresso e fecha a Issue. Isso pode levar alguns minutos.
-4. **Volte ao perfil e atualize a página.** Veja a nova tela antes de enviar o próximo comando.
+1. **Choose a button above.** It opens an Issue with the command already filled in.
+2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
+3. **Wait for processing.** The automation presses the button, saves progress and closes the Issue. This may take a few minutes.
+4. **Return to the profile and refresh the page.** Check the new screen before sending your next command.
 
-Não precisa instalar um emulador nem baixar a ROM. O jogo roda na automação, e o README mostra seu resultado.
-**Espere pelo menos 30 segundos entre comandos da mesma conta.** Outros visitantes também podem jogar e mudar a tela.
+You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
+**Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
 
-### O que cada botão faz no FireRed
+### What each button does in FireRed
 
-| Botão | Função |
+| Button | Function |
 | :--- | :--- |
-| **↑ UP · ↓ DOWN · ← LEFT · → RIGHT** | Mover o personagem e navegar pelas opções dos menus. |
-| **A** | Confirmar, conversar, examinar objetos e avançar diálogos. |
-| **B** | Cancelar, voltar ou fechar menus; também permite correr depois de obter os Running Shoes. |
-| **START** | Abrir o menu principal quando disponível: Pokémon, Bag, Save e opções. |
-| **SELECT** | Usar um item registrado; em algumas telas, alternar opções, como o teclado do nome. |
-| **L / R** | Abrir a ajuda do FireRed na configuração padrão; o efeito pode mudar conforme a opção de botões do jogo. |
+| **↑ UP · ↓ DOWN · ← LEFT · → RIGHT** | Move the character and navigate menu options. |
+| **A** | Confirm, talk, examine objects and advance dialogue. |
+| **B** | Cancel, go back or close menus; also lets you run after obtaining the Running Shoes. |
+| **START** | Open the main menu when available: Pokémon, Bag, Save and options. |
+| **SELECT** | Use a registered item; on some screens, switch options, such as the name-entry keyboard. |
+| **L / R** | Open FireRed's help with the default configuration; their behavior can change with the game's button settings. |
 
-Cada clique segura o botão por **12 frames** (cerca de 0.2 segundo). Para um movimento mais longo,
-edite o número no título da Issue: por exemplo, `[gba] RIGHT 60`. São aceitos **1 a 120 frames** por comando.
-Alguns diálogos precisam de mais de um comando **A**. O progresso fica salvo automaticamente entre comandos.
+Each click holds the button for **12 frames** (about 0.2 seconds). For a longer movement,
+edit the number in the Issue title: for example, `[gba] RIGHT 60`. Commands accept **1 to 120 frames**.
+Some dialogues need more than one **A** command. Progress is saved automatically between commands.
 
-[Fila de comandos](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Tela original](assets/community/screen.png) · [Como o projeto funciona](docs/community-gba.md)
+[Command queue](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 
 <!-- COMMUNITY-GBA:END -->
 

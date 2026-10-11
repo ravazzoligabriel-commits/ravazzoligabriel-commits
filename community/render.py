@@ -59,81 +59,81 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
         old.unlink()
     last = session.data['last']
     player = html.escape(last['player']) if last else '—'
-    action = ('Preparação do treinador' if last and last['button']=='Trainer setup' else
-              f"{last['button']} · {last['duration']} frames" if last else 'Aguardando o primeiro comando')
+    action = ('Trainer setup' if last and last['button']=='Trainer setup' else
+              f"{last['button']} · {last['duration']} frames" if last else 'Waiting for the first command')
     control_art(assets)
     controls={}
     prefix = '[gba]' if branch=='main' else '[gba-test]'
     default_frames = 12 if mode=='firered' else 60
     for button in ('UP','DOWN','LEFT','RIGHT','A','B','L','R','START','SELECT'):
-        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} {default_frames}',body=f'Confirme em Create / Submit new issue para enviar {button} ao jogo compartilhado. Aguarde o processamento e atualize o perfil.'))
+        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} {default_frames}',body=f'Click Create / Submit new issue to send {button} to the shared game. Wait for processing, then refresh the profile.'))
         source=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-{button.lower()}-v1.png'
         width=120 if button in ('L','R') else 96 if button in ('START','SELECT') else 48
-        controls[button]=f'<a href="{html.escape(url,quote=True)}" title="Enviar {button}"><img src="{source}" alt="{button}" width="{width}" /></a>'
+        controls[button]=f'<a href="{html.escape(url,quote=True)}" title="Send {button}"><img src="{source}" alt="{button}" width="{width}" /></a>'
     def spacer(width):
         return f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-space-v1.png" alt="" width="{width}" height="1" />'
-    center=f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-center-v1.png" alt="Centro do direcional" width="48" />'
+    center=f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-center-v1.png" alt="D-pad center" width="48" />'
     pad=f'''<p>{controls['L']}{spacer(176)}{controls['R']}</p>
 <p>{spacer(48)}{controls['UP']}{spacer(248)}{controls['A']}{spacer(24)}<br />
 {controls['LEFT']}{center}{controls['RIGHT']}{spacer(152)}{controls['B']}{spacer(72)}<br />
 {spacer(48)}{controls['DOWN']}{spacer(320)}</p>
 <p>{controls['SELECT']}{spacer(24)}{controls['START']}</p>'''
     title = 'POKÉMON FIRERED' if mode=='firered' else 'GBA PIXEL ADVENTURE'
-    description = ('Uma partida real de **Pokémon FireRed**, jogada em comunidade pelo GitHub. '
-                   'Todo mundo controla o **mesmo personagem e o mesmo save**: cada comando continua a aventura de onde o último visitante parou.'
-                   if mode=='firered' else 'Uma aventura homebrew de GBA, jogada em comunidade com um único save compartilhado.')
+    description = ('A real game of **Pokémon FireRed**, played together through GitHub. '
+                   'Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.'
+                   if mode=='firered' else 'A community GBA homebrew adventure with one shared save.')
     preview = '\nDevelopment preview: test turns run when the maintainer pushes engine changes. Automatic visitor turns activate after merging the PR.\n' if branch!='main' else ''
     image_url=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/{name}'
     block=f'''{BEGIN}
 <div align="center">
 
 ## {title}
-**UMA AVENTURA · UM SAVE · TODA A COMUNIDADE**
+**ONE ADVENTURE · ONE SAVE · THE WHOLE COMMUNITY**
 
 {description}
 
-A tela abaixo é a última imagem do jogo. Ela muda quando um comando é processado; atualize a página para ver o resultado.
+The screen below is the latest game snapshot. It changes when a command is processed; refresh the page to see the result.
 
 <img src="{image_url}" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 {preview}
 
-**CONTROLES — clique no botão que quer enviar**
+**CONTROLS — click the button you want to send**
 
 {pad}
 
-| ÚLTIMA AÇÃO | ÚLTIMO JOGADOR | COMANDOS DA COMUNIDADE |
+| LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
 | {action} | {player} | {session.data['total']} |
 
 </div>
 
-### Como jogar
+### How to play
 
-1. **Escolha um botão acima.** Ele abre uma Issue com o comando já preenchido.
-2. Entre na sua conta do GitHub e clique em **Create / Submit new issue** para confirmar o envio. Só abrir a Issue não envia o comando.
-3. **Aguarde o processamento.** A automação executa o botão, salva o progresso e fecha a Issue. Isso pode levar alguns minutos.
-4. **Volte ao perfil e atualize a página.** Veja a nova tela antes de enviar o próximo comando.
+1. **Choose a button above.** It opens an Issue with the command already filled in.
+2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
+3. **Wait for processing.** The automation presses the button, saves progress and closes the Issue. This may take a few minutes.
+4. **Return to the profile and refresh the page.** Check the new screen before sending your next command.
 
-Não precisa instalar um emulador nem baixar a ROM. O jogo roda na automação, e o README mostra seu resultado.
-**Espere pelo menos 30 segundos entre comandos da mesma conta.** Outros visitantes também podem jogar e mudar a tela.
+You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
+**Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
 
-### O que cada botão faz no FireRed
+### What each button does in FireRed
 
-| Botão | Função |
+| Button | Function |
 | :--- | :--- |
-| **↑ UP · ↓ DOWN · ← LEFT · → RIGHT** | Mover o personagem e navegar pelas opções dos menus. |
-| **A** | Confirmar, conversar, examinar objetos e avançar diálogos. |
-| **B** | Cancelar, voltar ou fechar menus; também permite correr depois de obter os Running Shoes. |
-| **START** | Abrir o menu principal quando disponível: Pokémon, Bag, Save e opções. |
-| **SELECT** | Usar um item registrado; em algumas telas, alternar opções, como o teclado do nome. |
-| **L / R** | Abrir a ajuda do FireRed na configuração padrão; o efeito pode mudar conforme a opção de botões do jogo. |
+| **↑ UP · ↓ DOWN · ← LEFT · → RIGHT** | Move the character and navigate menu options. |
+| **A** | Confirm, talk, examine objects and advance dialogue. |
+| **B** | Cancel, go back or close menus; also lets you run after obtaining the Running Shoes. |
+| **START** | Open the main menu when available: Pokémon, Bag, Save and options. |
+| **SELECT** | Use a registered item; on some screens, switch options, such as the name-entry keyboard. |
+| **L / R** | Open FireRed's help with the default configuration; their behavior can change with the game's button settings. |
 
-Cada clique segura o botão por **{default_frames} frames** (cerca de {default_frames/60:g} segundo). Para um movimento mais longo,
-edite o número no título da Issue: por exemplo, `{prefix} RIGHT 60`. São aceitos **1 a 120 frames** por comando.
-Alguns diálogos precisam de mais de um comando **A**. O progresso fica salvo automaticamente entre comandos.
+Each click holds the button for **{default_frames} frames** (about {default_frames/60:g} seconds). For a longer movement,
+edit the number in the Issue title: for example, `{prefix} RIGHT 60`. Commands accept **1 to 120 frames**.
+Some dialogues need more than one **A** command. Progress is saved automatically between commands.
 
-[Fila de comandos](https://github.com/{repository}/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Tela original](assets/community/screen.png) · [Como o projeto funciona](docs/community-gba.md)
+[Command queue](https://github.com/{repository}/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 
 {END}'''
     readme=root/'README.md'
