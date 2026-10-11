@@ -17,7 +17,7 @@ Development preview: test turns run when the maintainer pushes engine changes. A
 
 | LAST ACTION | CURRENT PLAYER | TOTAL COMMANDS |
 | :---: | :---: | :---: |
-| RIGHT · 24 frames | ravazzoligabriel-commits | 1 |
+| A · 12 frames | ravazzoligabriel-commits | 2 |
 
 </div>
 
