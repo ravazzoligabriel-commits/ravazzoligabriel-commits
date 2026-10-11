@@ -6,11 +6,11 @@ on:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
-    branches: [feat/community-gba]
+    branches: [feat/community-gba, main]
     paths: ['community/**', 'homebrew/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba.yml']
 permissions: {}
 concurrency:
-  group: community-gba-${{ github.event_name == 'push' && 'canary' || github.ref_name }}
+  group: community-gba
   cancel-in-progress: false
 jobs:
   turns:
@@ -55,7 +55,7 @@ jobs:
         shell: bash
         env:
           TARGET_BRANCH: ${{ github.event_name == 'issues' && github.event.repository.default_branch || github.ref_name }}
-          CANARY: ${{ github.event_name == 'push' }}
+          CANARY: ${{ github.ref_name != github.event.repository.default_branch }}
         run: |
           if [[ "$CANARY" == 'true' ]]; then
             python -m community.worker --core runtime/core/mgba_libretro.so --rom runtime/demo.gba --branch "$TARGET_BRANCH" --canary --publish

@@ -37,7 +37,8 @@ def main():
     repo=os.environ['GITHUB_REPOSITORY']
     api=GitHub(repo,os.environ['GH_TOKEN'])
     key=key_from_env()
-    path=state_root/'.community'/'session.enc'
+    state_file='.community/canary.enc' if args.canary else '.community/session.enc'
+    path=state_root/state_file
     previous=decode(path.read_bytes(),key) if path.exists() else None
     emulator=Emulator(args.core)
     try:
@@ -55,18 +56,19 @@ def main():
         pending=[i for i in queue if str(i['number']) not in session.data['ledger']][:50]
         for issue in pending:
             session.process(issue)
-        path.parent.mkdir(parents=True,exist_ok=True)
-        temp=path.with_suffix('.tmp')
-        temp.write_bytes(encode(session.snapshot(),key)); temp.replace(path)
+        if pending or previous is None:
+            path.parent.mkdir(parents=True,exist_ok=True)
+            temp=path.with_suffix('.tmp')
+            temp.write_bytes(encode(session.snapshot(),key)); temp.replace(path)
         render(root,emulator,session,repo,args.branch,args.mode)
         if args.publish:
             if state_root!=root:
                 # Save the pending public presentation privately first. If
                 # public push fails, next run rebuilds it from committed state.
-                commit(state_root,['.community/session.enc'],'Persist community GBA turns',args.state_branch or 'main')
+                commit(state_root,[state_file],'Persist community GBA turns',args.state_branch or 'main')
                 paths=['README.md','assets/community']
             else:
-                paths=['README.md','assets/community','.community/session.enc']
+                paths=['README.md','assets/community',state_file]
             commit(root,paths,f'Update community GBA screen ({session.data["total"]} turns)',args.branch)
             for issue in queue:
                 if str(issue['number']) in session.data['ledger']:

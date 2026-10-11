@@ -84,7 +84,9 @@ restore a selected snapshot commit **and its matching image/ledger**, then enabl
 it. Reopen only commands deliberately excluded by that rollback. To change ROM,
 begin a separate session; to upgrade mGBA, test a copy privately before migrating.
 Version/ROM mismatch halts rather than silently restarting. Development canary
-state is isolated in the feature branch and contains synthetic test IDs.
+state is isolated in the feature branch and consumes real `[gba-test]` Issues.
+Before merge, a maintainer pushes an engine change to run this development queue;
+default-branch Issue-triggered processing becomes available after merge.
 
 Full ledger grows over time; public history is capped at 200 records. Review
 repository size and runtime before very large campaigns. Scheduled jobs incur
