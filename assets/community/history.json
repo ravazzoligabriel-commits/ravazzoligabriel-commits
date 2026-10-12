@@ -84,12 +84,12 @@
     "status": "applied"
   },
   {
+    "button": "LEFT",
+    "created": "2026-10-12T00:31:14Z",
+    "duration": 12,
     "issue": 42,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-12T00:31:14Z",
-    "status": "applied",
-    "button": "LEFT",
-    "duration": 12,
-    "state_sha256": "03ab2a37329431eab9e90862949ae480d4bcca5738c6aaba3736b86e3c726c1e"
+    "state_sha256": "03ab2a37329431eab9e90862949ae480d4bcca5738c6aaba3736b86e3c726c1e",
+    "status": "applied"
   }
 ]
