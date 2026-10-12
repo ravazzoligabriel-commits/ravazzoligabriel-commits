@@ -80,7 +80,24 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
     prefix = '[gba]' if branch=='main' else '[gba-test]'
     default_frames = 12 if mode=='firered' else 60
     for button in ('UP','DOWN','LEFT','RIGHT','A','B','L','R','START','SELECT'):
-        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} {default_frames}',body=f'Click Create / Submit new issue to send {button} to the shared game. Wait for processing, then refresh the profile.'))
+        body=f'''## Send a FireRed command
+
+**Button: {button} · Hold: {default_frames} frames**
+
+### One final click to play
+Click the green **Create / Submit new issue** button at the bottom of this form to send the command. Opening this page alone does not send it.
+
+### Leave this Issue OPEN
+You do not need to close it yourself. The game automation reads the open Issue, executes the command, saves progress and **closes the Issue automatically after processing**. Closing it before processing removes it from the command queue.
+
+### See the result
+Wait for this Issue to close, then return to the profile and refresh the page to see the updated game screen. Processing may take a few minutes.
+
+**No pull request, code changes or approval from the owner are needed.** Just submit this Issue.
+
+Wait at least 30 seconds between commands from the same account. The command is read from the title; you can change its duration to 1–120 frames. Rejected commands may also be closed without changing the game.
+'''
+        url = f'https://github.com/{repository}/issues/new?' + urlencode(dict(title=f'{prefix} {button} {default_frames}',body=body))
         source=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-{button.lower()}-v1.png'
         width=120 if button in ('L','R') else 96 if button in ('START','SELECT') else 48
         controls[button]=f'<a href="{html.escape(url,quote=True)}" title="Send {button}"><img src="{source}" alt="{button}" width="{width}" /></a>'
@@ -149,6 +166,8 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 
 > **Click a control → submit the prefilled Issue → wait → refresh the profile.**
 > One accepted command per account every 30 seconds. Processing may take a few minutes.
+
+**No pull request needed.** Submit the Issue and leave it open; the automation closes it after processing.
 
 <details>
 <summary><strong>First time here? Open the step-by-step guide</strong></summary>
