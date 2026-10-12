@@ -1,10 +1,3 @@
-<div align="center">
-
-**Gabriel Ravazzoli** · DevSecOps intern · automation, infrastructure & backend
-<br /><sub>Below is a real Pokémon FireRed game anyone can play from this page. [About me ↓](#gabriel-ravazzoli)</sub>
-
-</div>
-
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
@@ -30,7 +23,7 @@
 | :---: | :---: | :---: |
 | DOWN · 12 frames | ravazzoligabriel-commits | 13 |
 
-[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [About me](#gabriel-ravazzoli)
+[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
 </div>
 
@@ -92,87 +85,3 @@ Some dialogues need more than one **A** command. Progress is saved automatically
 [Command queue](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 
 <!-- COMMUNITY-GBA:END -->
-
----
-
-<div align="center">
-
-# Gabriel Ravazzoli
-
-<img src="assets/profile/identity-v1.svg" alt="Gabriel Ravazzoli — turning complex workflows into reliable systems. Automation, backend, AI and independent game development." width="880" />
-
-[Focus](#what-i-work-with) · [Projects](#selected-projects) · [Building](#currently-building) · [Toolbox](#toolbox) · [Play FireRed](#pokémon-firered)
-
-</div>
-
-DevSecOps intern. Day to day I automate infrastructure, wire up integrations and build backend services and dashboards.
-Main stack: **TypeScript / Node.js, GitHub Actions, Docker, AWS and Azure**.
-On the side I build AI-assisted pipelines and an indie 2D game in Godot.
-
-The FireRed game above is a good sample of how I work: a Python + mGBA emulator running inside GitHub Actions, driven by Issues, with a persistent save, cooldowns and a leaderboard. [See how it works →](docs/community-gba.md)
-
-## What I work with
-
-<img src="assets/profile/focus-v1.svg" alt="Automation and integrations: workflows, APIs and services. Backend: TypeScript, Node.js and data flows. AI: orchestration, validation and structured outputs. Architecture: observability, dashboards and DevSecOps." width="880" />
-
-## Selected projects
-
-<img src="assets/profile/projects-v1.svg" alt="Shiina: Node.js and TypeScript automation and AI experiments. Gutenberg: web interfaces and frontend experimentation. Offer Automation: marketplace data collection, selection and presentation pipelines." width="880" />
-
-<sub>These repositories are private for now — happy to walk through them on request.</sub>
-
-<details>
-<summary><strong>Project details</strong></summary>
-
-**Shiina** — An automation and AI experimentation project built around Node.js and TypeScript. It explores tool orchestration, structured execution, logging and small creative automation experiments.
-
-**Gutenberg** — A web project focused on interface construction, product structure and frontend experimentation. A space to refine visual systems and implementation together.
-
-**Offer Automation** — An end-to-end pipeline for product offers: collecting marketplace data, normalizing it, applying selection logic, generating presentation assets and preparing content for distribution.
-
-</details>
-
-**Featured experiment:** [Community FireRed](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits) — a real GBA game controlled through GitHub Issues, with one shared save and a global leaderboard. [Take a turn ↑](#pokémon-firered)
-
-## Currently building
-
-<img src="assets/profile/building-v1.svg" alt="Currently building an independent 2D game: gameplay systems, UI, developer tools and technical architecture." width="880" />
-
-Game development is where I explore state, interaction and visual feedback beyond traditional web and backend work.
-
-## Toolbox
-
-**Languages & applications**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-
-**Infrastructure & engineering**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
-
-<details>
-<summary><strong>Professional experience</strong></summary>
-
-In a professional engineering environment, I work with internal automation, backend services, dashboards, integrations, architecture and engineering tooling. Company-specific systems and internal implementation details stay private.
-
-</details>
-
----
-
-<div align="center">
-
-**Build with intention. Make it observable. Keep it simple.**
-
-<sub>Automation, engineering and a little creative experimentation.</sub>
-
-[Back to the adventure ↑](#pokémon-firered)
-
-</div>
