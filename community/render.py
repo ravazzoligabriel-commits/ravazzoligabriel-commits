@@ -93,7 +93,9 @@ On the Issue page that opens, click **Close issue** (or **Close with comment**).
 ### 3. Return to the game
 [Back to the profile — see the updated game](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered)
 
-Refresh the profile after processing to see the change. Closing triggers processing immediately, but the workflow and image update may take a few minutes.
+**Allow about 15–30 seconds, then refresh the profile.** The latest timing check took 16 seconds from the Issue event to processing completion. GitHub runner queues and image caching can add more time; this is an estimate, not a countdown.
+
+[Check processing status](https://github.com/{repository}/actions/workflows/community-gba.yml) if the screen has not updated. If the game ignores a button, the picture may stay the same even after processing.
 
 **No pull request, code changes or approval from the owner are needed.** Just submit this Issue.
 
@@ -134,7 +136,7 @@ Wait at least 30 seconds between commands from the same account. The command is 
 
 <img src="{image_url}" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
-<sub>Latest game snapshot · Send a command, wait for processing, then refresh.</sub>
+<sub>Latest game snapshot · Allow about 15–30 seconds after sending a command, then refresh.</sub>
 
 {preview}
 
@@ -167,7 +169,9 @@ Wait at least 30 seconds between commands from the same account. The command is 
 {description}
 
 > **Click a control → submit the prefilled Issue → click Close issue → return here and refresh.**
-> One accepted command per account every 30 seconds. Processing may take a few minutes.
+> **Update delay: allow about 15–30 seconds, then refresh.** Latest timing check: **16 seconds** to finish processing. GitHub queues and image caching can take longer.
+
+<sub>The 30-second interval between accepted commands is a separate per-player cooldown. [Timing details](docs/latency.md) · [Processing status](https://github.com/{repository}/actions/workflows/community-gba.yml)</sub>
 
 **No pull request needed.** Click **Create**, then **Close issue** on the next page. If it is already closed, just return here. Each command is processed only once.
 
@@ -177,7 +181,7 @@ Wait at least 30 seconds between commands from the same account. The command is 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
 3. **Click Close issue** (or **Close with comment**) on the Issue page. Closing also triggers processing; if the automation already closed it, continue.
-4. **[Return to the profile](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered) and refresh the page.** Processing may take a few minutes. Check the new screen before sending your next command.
+4. **[Return to the profile](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered) and refresh after about 15–30 seconds.** Queues or image caching can add time. Check the new screen before sending your next command.
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
