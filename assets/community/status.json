@@ -6,13 +6,13 @@
   "frames": 28868,
   "total": 6,
   "last": {
+    "button": "LEFT",
+    "created": "2026-10-12T00:23:25Z",
+    "duration": 12,
     "issue": 40,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-12T00:23:25Z",
-    "status": "applied",
-    "button": "LEFT",
-    "duration": 12,
-    "state_sha256": "27aefe4b6c7c57001d1633af249e5bfb7fc46157f5111f71a22671a167eff1f2"
+    "state_sha256": "27aefe4b6c7c57001d1633af249e5bfb7fc46157f5111f71a22671a167eff1f2",
+    "status": "applied"
   },
   "screen_sha256": "b0a9000d4456d63c5fae41504187db43402bee7d2cad6f3ad31a2d4b4ab45c1e",
   "mode": "firered"
