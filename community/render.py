@@ -147,7 +147,7 @@ Wait at least 30 seconds between commands from the same account. The command is 
 | :---: | :---: | :---: |
 | {action} | {player} | {session.data['total']} |
 
-[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [About me](#gabriel-ravazzoli)
+[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
 </div>
 
