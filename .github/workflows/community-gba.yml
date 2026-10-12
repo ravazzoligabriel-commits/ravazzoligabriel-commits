@@ -45,6 +45,9 @@ jobs:
           python -c "from community.session import key_from_env; key_from_env()"
       - uses: ./.github/actions/setup-mgba
       - name: Verify engine before any write
+        # Full regression runs validate code changes and scheduled/manual checks.
+        # Visitor turns still verify ROM digest, authenticated state and core at runtime.
+        if: github.event_name != 'issues'
         env:
           MGBA_CORE: runtime/core/mgba_libretro.so
         run: python -m unittest discover -s tests -v
@@ -58,7 +61,7 @@ jobs:
           ref: main
           path: private
       - name: Verify privately supplied FireRed before publication
-        if: env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
+        if: github.event_name != 'issues' && env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
         env:
           MGBA_CORE: runtime/core/mgba_libretro.so
           FIRERED_ROM: private/cartridge.gba
