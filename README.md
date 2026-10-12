@@ -11,7 +11,7 @@
 
 
 
-**CONTROLS — click the button you want to send**
+**YOUR TURN — choose a button**
 
 <p><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+L+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+L+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send L"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-l-v1.png" alt="L" width="120" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="176" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+R+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+R+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send R"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-r-v1.png" alt="R" width="120" /></a></p>
 <p><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="48" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+UP+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+UP+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send UP"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-up-v1.png" alt="UP" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="248" height="1" /><a href="https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues/new?title=%5Bgba%5D+A+12&amp;body=Click+Create+%2F+Submit+new+issue+to+send+A+to+the+shared+game.+Wait+for+processing%2C+then+refresh+the+profile." title="Send A"><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-a-v1.png" alt="A" width="48" /></a><img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/control-space-v1.png" alt="" width="24" height="1" /><br />
@@ -23,22 +23,31 @@
 | :---: | :---: | :---: |
 | B · 12 frames | ravazzoligabriel-commits | 4 |
 
+[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [About me](#gabriel-ravazzoli)
+
 </div>
+
+---
 
 ### Global leaderboard · Top 10
 
-The most active players in this shared adventure, ranked by **all-time accepted commands**.
-Updated automatically after commands are processed. Rejected commands do not count; ties are ordered alphabetically by username.
+**Every turn counts.** The most active players in this shared adventure.
 
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
-| 1 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | 4 |
+| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **4** |
 
-Only players with accepted commands are listed. Join the adventure to earn your place!
+<sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 
 ### How to play
 
 A real game of **Pokémon FireRed**, played together through GitHub. Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.
+
+> **Click a control → submit the prefilled Issue → wait → refresh the profile.**
+> One accepted command per account every 30 seconds. Processing may take a few minutes.
+
+<details>
+<summary><strong>First time here? Open the step-by-step guide</strong></summary>
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
@@ -47,6 +56,11 @@ A real game of **Pokémon FireRed**, played together through GitHub. Everyone co
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
+
+</details>
+
+<details>
+<summary><strong>Button guide &amp; command duration</strong></summary>
 
 ### What each button does in FireRed
 
@@ -63,58 +77,66 @@ Each click holds the button for **12 frames** (about 0.2 seconds). For a longer 
 edit the number in the Issue title: for example, `[gba] RIGHT 60`. Commands accept **1 to 120 frames**.
 Some dialogues need more than one **A** command. Progress is saved automatically between commands.
 
+</details>
+
 [Command queue](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 
 <!-- COMMUNITY-GBA:END -->
 
 ---
 
+<div align="center">
+
 # Gabriel Ravazzoli
 
-**Automation · Backend Engineering · AI Systems · Creative Development**
+<img src="assets/profile/identity-v1.svg" alt="Gabriel Ravazzoli — turning complex workflows into reliable systems. Automation, backend, AI and independent game development." width="880" />
 
-I build software that turns repetitive or complex workflows into reliable systems.
+[Focus](#what-i-work-with) · [Projects](#selected-projects) · [Building](#currently-building) · [Toolbox](#toolbox) · [Play FireRed](#pokémon-firered)
 
-My work sits mostly between **automation, backend development, AI-assisted pipelines and systems architecture**. I like projects where software has to coordinate several moving parts, expose what is happening internally and still remain simple enough to operate.
+</div>
 
-Outside of professional work, I also experiment with creative software and I'm currently developing an independent 2D game.
+I build software that makes complicated workflows easier to run, understand and maintain.
+My work connects **automation, backend development, AI-assisted pipelines and systems architecture**.
+Outside of professional work, I explore creative software and independent game development.
 
 ## What I work with
 
-- **Automation & integrations** — workflows, services, APIs and process orchestration
-- **Backend engineering** — TypeScript/Node.js, structured data flows and service design
-- **AI systems** — model orchestration, structured outputs, validation and tool-based workflows
-- **Architecture** — system modeling, technical documentation and maintainable boundaries
-- **Engineering tooling** — observability, internal dashboards, developer workflows and DevSecOps practices
+<img src="assets/profile/focus-v1.svg" alt="Automation and integrations: workflows, APIs and services. Backend: TypeScript, Node.js and data flows. AI: orchestration, validation and structured outputs. Architecture: observability, dashboards and DevSecOps." width="880" />
 
 ## Selected projects
 
-### Shiina
+<img src="assets/profile/projects-v1.svg" alt="Shiina: Node.js and TypeScript automation and AI experiments. Gutenberg: web interfaces and frontend experimentation. Offer Automation: marketplace data collection, selection and presentation pipelines." width="880" />
 
-An automation and AI experimentation project built around **Node.js and TypeScript**. It explores tool orchestration, structured execution, logging and small creative automation experiments.
+<details>
+<summary><strong>Explore the project notes</strong></summary>
 
-### Gutenberg
+**Shiina** — An automation and AI experimentation project built around Node.js and TypeScript. It explores tool orchestration, structured execution, logging and small creative automation experiments.
 
-A web project focused on interface construction, product structure and frontend experimentation. I use it as a space to refine how I approach visual systems and implementation together.
+**Gutenberg** — A web project focused on interface construction, product structure and frontend experimentation. A space to refine visual systems and implementation together.
 
-### Offer Automation
+**Offer Automation** — An end-to-end pipeline for product offers: collecting marketplace data, normalizing it, applying selection logic, generating presentation assets and preparing content for distribution.
 
-An end-to-end automation pipeline for product offers: collecting marketplace data, normalizing it, applying selection logic, generating presentation assets and preparing content for distribution.
+</details>
+
+**Featured experiment:** [Community FireRed](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits) — a real GBA game controlled through GitHub Issues, with one shared save and a global leaderboard. [Take a turn ↑](#pokémon-firered)
 
 ## Currently building
 
-I'm developing an **independent 2D game**, working across gameplay systems, UI, tooling and technical architecture. It has been a good way to push beyond traditional web/backend work and think more deeply about state, interaction and visual feedback.
+<img src="assets/profile/building-v1.svg" alt="Currently building an independent 2D game: gameplay systems, UI, developer tools and technical architecture." width="880" />
 
-## Professional experience
-
-In a professional engineering environment, I work with **internal automation, backend services, dashboards, integrations, architecture and engineering tooling**. I intentionally keep company-specific systems and internal implementation details out of this profile.
+Game development is where I explore state, interaction and visual feedback beyond traditional web and backend work.
 
 ## Toolbox
+
+**Languages & applications**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Infrastructure & engineering**
+
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -122,6 +144,21 @@ In a professional engineering environment, I work with **internal automation, ba
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Godot](https://img.shields.io/badge/Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
 
+<details>
+<summary><strong>Professional experience</strong></summary>
+
+In a professional engineering environment, I work with internal automation, backend services, dashboards, integrations, architecture and engineering tooling. Company-specific systems and internal implementation details stay private.
+
+</details>
+
 ---
 
-I care about understanding how systems actually work, not only making them pass a demo. Most of what I build starts with the same question: **how can this be made simpler, more observable and less repetitive?**
+<div align="center">
+
+**Build with intention. Make it observable. Keep it simple.**
+
+<sub>Automation, engineering and a little creative experimentation.</sub>
+
+[Back to the adventure ↑](#pokémon-firered)
+
+</div>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-label="Automation and integrations, backend engineering, AI systems, architecture and tooling">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#292235"/><stop offset="1" stop-color="#141922"/></linearGradient></defs>
+<g font-family="Segoe UI, Arial, sans-serif"><g transform="translate(0,0)"><rect x="1" y="1" width="430" height="116" rx="14" fill="#1a1e27" stroke="#383c49"/>
+<rect x="19" y="23" width="4" height="69" rx="2" fill="#df777f"/>
+<text x="37" y="39" fill="#efecf5" font-size="22" font-weight="700">Automation &amp; integrations</text>
+<text x="37" y="68" fill="#c4c3ce" font-size="17">Workflows, APIs and services.</text>
+<text x="37" y="94" fill="#9699aa" font-size="16">Connecting systems with less repetition.</text></g><g transform="translate(448,0)"><rect x="1" y="1" width="430" height="116" rx="14" fill="#1a1e27" stroke="#383c49"/>
+<rect x="19" y="23" width="4" height="69" rx="2" fill="#a393cf"/>
+<text x="37" y="39" fill="#efecf5" font-size="22" font-weight="700">Backend engineering</text>
+<text x="37" y="68" fill="#c4c3ce" font-size="17">TypeScript, Node.js and data flows.</text>
+<text x="37" y="94" fill="#9699aa" font-size="16">Clear boundaries. Reliable execution.</text></g><g transform="translate(0,132)"><rect x="1" y="1" width="430" height="116" rx="14" fill="#1a1e27" stroke="#383c49"/>
+<rect x="19" y="23" width="4" height="69" rx="2" fill="#90b6cc"/>
+<text x="37" y="39" fill="#efecf5" font-size="22" font-weight="700">AI systems</text>
+<text x="37" y="68" fill="#c4c3ce" font-size="17">Model orchestration and validation.</text>
+<text x="37" y="94" fill="#9699aa" font-size="16">Structured outputs and tool workflows.</text></g><g transform="translate(448,132)"><rect x="1" y="1" width="430" height="116" rx="14" fill="#1a1e27" stroke="#383c49"/>
+<rect x="19" y="23" width="4" height="69" rx="2" fill="#a6baa0"/>
+<text x="37" y="39" fill="#efecf5" font-size="22" font-weight="700">Architecture &amp; tooling</text>
+<text x="37" y="68" fill="#c4c3ce" font-size="17">Observability, dashboards and DevSecOps.</text>
+<text x="37" y="94" fill="#9699aa" font-size="16">Systems that are easier to understand.</text></g></g></svg>

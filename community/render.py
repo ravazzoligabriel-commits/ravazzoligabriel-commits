@@ -102,7 +102,8 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
              'alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />'
              if mode=='firered' else description)
     leaders=leaderboard(session.data['ledger'])
-    ranking_rows='\n'.join(f"| {entry['rank']} | [@{html.escape(entry['player'])}]({entry['profile']}) | {entry['commands']} |" for entry in leaders)
+    medals={1:'🥇',2:'🥈',3:'🥉'}
+    ranking_rows='\n'.join(f"| {medals.get(entry['rank'],entry['rank'])} | [@{html.escape(entry['player'])}]({entry['profile']}) | **{entry['commands']}** |" for entry in leaders)
     if not ranking_rows:
         ranking_rows='| — | Be the first player! | 0 |'
     block=f'''{BEGIN}
@@ -118,7 +119,7 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 
 {preview}
 
-**CONTROLS — click the button you want to send**
+**YOUR TURN — choose a button**
 
 {pad}
 
@@ -126,22 +127,31 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 | :---: | :---: | :---: |
 | {action} | {player} | {session.data['total']} |
 
+[How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [About me](#gabriel-ravazzoli)
+
 </div>
+
+---
 
 ### Global leaderboard · Top 10
 
-The most active players in this shared adventure, ranked by **all-time accepted commands**.
-Updated automatically after commands are processed. Rejected commands do not count; ties are ordered alphabetically by username.
+**Every turn counts.** The most active players in this shared adventure.
 
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
 {ranking_rows}
 
-Only players with accepted commands are listed. Join the adventure to earn your place!
+<sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 
 ### How to play
 
 {description}
+
+> **Click a control → submit the prefilled Issue → wait → refresh the profile.**
+> One accepted command per account every 30 seconds. Processing may take a few minutes.
+
+<details>
+<summary><strong>First time here? Open the step-by-step guide</strong></summary>
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
@@ -150,6 +160,11 @@ Only players with accepted commands are listed. Join the adventure to earn your 
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
+
+</details>
+
+<details>
+<summary><strong>Button guide &amp; command duration</strong></summary>
 
 ### What each button does in FireRed
 
@@ -165,6 +180,8 @@ You do not need to install an emulator or download the ROM. The game runs in the
 Each click holds the button for **{default_frames} frames** (about {default_frames/60:g} seconds). For a longer movement,
 edit the number in the Issue title: for example, `{prefix} RIGHT 60`. Commands accept **1 to 120 frames**.
 Some dialogues need more than one **A** command. Progress is saved automatically between commands.
+
+</details>
 
 [Command queue](https://github.com/{repository}/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 

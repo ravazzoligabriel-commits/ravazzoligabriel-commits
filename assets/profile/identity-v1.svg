@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="176" viewBox="0 0 880 176" role="img" aria-label="Gabriel Ravazzoli — automation, backend, AI systems and independent game development">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#292235"/><stop offset="1" stop-color="#141922"/></linearGradient></defs>
+<g font-family="Segoe UI, Arial, sans-serif">
+<rect x="1" y="1" width="878" height="174" rx="20" fill="url(#bg)" stroke="#494056" stroke-width="2"/>
+<rect x="1" y="32" width="4" height="112" rx="2" fill="#df777f"/>
+<text x="34" y="35" fill="#d6a1b4" font-size="12" font-weight="700" letter-spacing="3">ENGINEERING / AUTOMATION / CREATIVE SOFTWARE</text>
+<text x="32" y="87" fill="#f7f3fc" font-size="42" font-weight="800">Gabriel Ravazzoli</text>
+<text x="34" y="120" fill="#d2cfdd" font-size="19">Turning complex workflows into reliable systems.</text>
+<text x="34" y="150" fill="#9f9cae" font-size="14">Automation · Backend · AI systems · Independent game development</text>
+<g fill="none" stroke="#8270a5" stroke-width="2" opacity=".75">
+<path d="M675 56h56v32h60v44h44M731 88v44h-56"/>
+<rect x="651" y="39" width="48" height="34" rx="8" fill="#262333"/>
+<rect x="708" y="71" width="48" height="34" rx="8" fill="#262333"/>
+<rect x="768" y="115" width="48" height="34" rx="8" fill="#262333"/>
+<rect x="651" y="115" width="48" height="34" rx="8" fill="#262333"/>
+</g><g fill="#e17f86"><circle cx="675" cy="56" r="4"/><circle cx="732" cy="88" r="4"/><circle cx="792" cy="132" r="4"/></g>
+</g></svg>
