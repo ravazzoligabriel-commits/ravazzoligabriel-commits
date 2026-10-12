@@ -102,14 +102,42 @@ Wait at least 30 seconds between commands from the same account. The command is 
         source=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-{button.lower()}-v1.png'
         width=120 if button in ('L','R') else 96 if button in ('START','SELECT') else 48
         controls[button]=f'<a href="{html.escape(url,quote=True)}" title="Send {button}"><img src="{source}" alt="{button}" width="{width}" /></a>'
-    def spacer(width):
-        return f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-space-v1.png" alt="" width="{width}" height="1" />'
+    # A compact HTML grid keeps the D-pad and action buttons aligned on GitHub
+    # mobile. Transparent spacer images and <br> cannot reliably constrain rows.
     center=f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/control-center-v1.png" alt="D-pad center" width="48" />'
-    pad=f'''<p>{controls['L']}{spacer(176)}{controls['R']}</p>
-<p>{spacer(48)}{controls['UP']}{spacer(248)}{controls['A']}{spacer(24)}<br />
-{controls['LEFT']}{center}{controls['RIGHT']}{spacer(152)}{controls['B']}{spacer(72)}<br />
-{spacer(48)}{controls['DOWN']}{spacer(320)}</p>
-<p>{controls['SELECT']}{spacer(24)}{controls['START']}</p>'''
+    pad=f'''<table align="center">
+<tr>
+<td align="center" colspan="2">{controls['L']}</td>
+<td></td>
+<td align="center" colspan="2">{controls['R']}</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">{controls['UP']}</td>
+<td></td>
+<td></td>
+<td align="center">{controls['A']}</td>
+</tr>
+<tr>
+<td align="center">{controls['LEFT']}</td>
+<td align="center">{center}</td>
+<td align="center">{controls['RIGHT']}</td>
+<td align="center">{controls['B']}</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td align="center">{controls['DOWN']}</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center" colspan="2">{controls['SELECT']}</td>
+<td></td>
+<td align="center" colspan="2">{controls['START']}</td>
+</tr>
+</table>'''
     title = 'POKÉMON FIRERED' if mode=='firered' else 'GBA PIXEL ADVENTURE'
     description = ('A real game of **Pokémon FireRed**, played together through GitHub. '
                    'Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.'
