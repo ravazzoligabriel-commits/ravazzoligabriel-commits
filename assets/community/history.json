@@ -120,12 +120,12 @@
     "status": "applied"
   },
   {
+    "button": "B",
+    "created": "2026-10-12T02:15:47Z",
+    "duration": 12,
     "issue": 46,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-12T02:15:47Z",
-    "status": "applied",
-    "button": "B",
-    "duration": 12,
-    "state_sha256": "34d358b4ede950b91f7f4f3a03df8c0d55412874a8c23371234f966425e0980a"
+    "state_sha256": "34d358b4ede950b91f7f4f3a03df8c0d55412874a8c23371234f966425e0980a",
+    "status": "applied"
   }
 ]
