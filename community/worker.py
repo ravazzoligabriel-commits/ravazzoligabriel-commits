@@ -80,7 +80,7 @@ def main():
                 paths=['README.md','assets/community',state_file]
             commit(root,paths,f'Update community GBA screen ({session.data["total"]} turns)',args.branch)
             for issue in queue:
-                if str(issue['number']) in session.data['ledger']:
+                if issue.get('state') != 'closed' and str(issue['number']) in session.data['ledger']:
                     api.close(issue['number'])
         print(f'mGBA verified: {session.data["total"]} accepted turns; {len(pending)} new queue items')
     finally:

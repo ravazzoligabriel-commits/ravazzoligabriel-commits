@@ -25,5 +25,13 @@ class DurableQueueTests(unittest.TestCase):
         client.request=lambda *args:[dict(number=1,title='[gba] A'),dict(number=2,title='[gba-test] B')]
         self.assertEqual([i['number'] for i in client.queue('[gba-test]')],[2])
 
+    def test_closed_command_is_still_available_for_processing(self):
+        client=GitHub('owner/repo','not-a-real-token')
+        def request(method,path,data=None):
+            self.assertIn('state=all',path)
+            return [dict(number=9,title='[gba] A 12',state='closed')]
+        client.request=request
+        self.assertEqual(client.queue()[0]['number'],9)
+
 if __name__=='__main__':
     unittest.main()

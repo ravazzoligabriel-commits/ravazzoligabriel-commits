@@ -84,14 +84,16 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 
 **Button: {button} · Hold: {default_frames} frames**
 
-### One final click to play
-Click the green **Create / Submit new issue** button at the bottom of this form to send the command. Opening this page alone does not send it.
+### 1. Send the command
+Click the green **Create / Submit new issue** button below. Opening this form alone does not send a command.
 
-### Leave this Issue OPEN
-You do not need to close it yourself. The game automation reads the open Issue, executes the command, saves progress and **closes the Issue automatically after processing**. Closing it before processing removes it from the command queue.
+### 2. Close the Issue
+On the Issue page that opens, click **Close issue** (or **Close with comment**). Closing it also triggers the game automation. Your command is processed once, even if both submission and closing trigger runs. If it is already closed, continue to the next step.
 
-### See the result
-Wait for this Issue to close, then return to the profile and refresh the page to see the updated game screen. Processing may take a few minutes.
+### 3. Return to the game
+[Back to the profile — see the updated game](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered)
+
+Refresh the profile after processing to see the change. Closing triggers processing immediately, but the workflow and image update may take a few minutes.
 
 **No pull request, code changes or approval from the owner are needed.** Just submit this Issue.
 
@@ -164,18 +166,18 @@ Wait at least 30 seconds between commands from the same account. The command is 
 
 {description}
 
-> **Click a control → submit the prefilled Issue → wait → refresh the profile.**
+> **Click a control → submit the prefilled Issue → click Close issue → return here and refresh.**
 > One accepted command per account every 30 seconds. Processing may take a few minutes.
 
-**No pull request needed.** Submit the Issue and leave it open; the automation closes it after processing.
+**No pull request needed.** Click **Create**, then **Close issue** on the next page. If it is already closed, just return here. Each command is processed only once.
 
 <details>
 <summary><strong>First time here? Open the step-by-step guide</strong></summary>
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
-3. **Wait for processing.** The automation presses the button, saves progress and closes the Issue. This may take a few minutes.
-4. **Return to the profile and refresh the page.** Check the new screen before sending your next command.
+3. **Click Close issue** (or **Close with comment**) on the Issue page. Closing also triggers processing; if the automation already closed it, continue.
+4. **[Return to the profile](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered) and refresh the page.** Processing may take a few minutes. Check the new screen before sending your next command.
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.

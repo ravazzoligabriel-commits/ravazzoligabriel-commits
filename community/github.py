@@ -20,7 +20,9 @@ class GitHub:
         issues=[]
         page=1
         while True:
-            batch=self.request('GET',f'/repos/{self.repository}/issues?state=open&sort=created&direction=asc&per_page=100&page={page}')
+            # Closing a submitted command must not remove it before processing.
+            # The durable session ledger, rather than Issue state, deduplicates turns.
+            batch=self.request('GET',f'/repos/{self.repository}/issues?state=all&sort=created&direction=asc&per_page=100&page={page}')
             issues.extend(i for i in batch if 'pull_request' not in i and i['title'].startswith(prefix))
             if len(batch)<100:
                 break

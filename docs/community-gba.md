@@ -7,7 +7,7 @@ pelo jogo. A ROM e o estado completo ficam em um repositório privado. Visitante
 participam enviando comandos, sem instalar nada nem receber a ROM.
 
 **Como participar:** clique em um botão do README, entre no GitHub e confirme em
-**Create / Submit new issue**. Aguarde a automação fechar a Issue, volte ao perfil
+**Create / Submit new issue**, depois clique em **Close issue**. Volte ao perfil
 e atualize a página. A direção move o personagem ou o cursor, **A** confirma e
 avança diálogos, **B** cancela, **START** abre o menu e **SELECT** usa o item
 registrado quando disponível. **L/R** abrem a ajuda na configuração padrão do
@@ -54,7 +54,8 @@ them after successfully publishing. Accepted and rejected turns appear in
 `assets/community/history.json`; the README reports the latest accepted turn.
 One command per account per 30 seconds is accepted, based on creation timestamps.
 Other visitors continue the same session. Reopening an already processed Issue
-does not repeat the turn. Closing an unprocessed Issue withdraws it from the queue.
+does not repeat the turn. Closing an unprocessed Issue also triggers processing;
+both open and closed commands remain eligible until recorded in the durable ledger.
 
 ## Activate the homebrew adventure
 
