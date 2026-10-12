@@ -52,6 +52,20 @@
     "status": "applied"
   },
   {
+    "created": "2026-10-12T00:18:02Z",
+    "issue": 38,
+    "player": "ravazzoligabriel-commits",
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
+  },
+  {
+    "created": "2026-10-12T00:22:31Z",
+    "issue": 39,
+    "player": "ravazzoligabriel-commits",
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
+  },
+  {
     "button": "LEFT",
     "created": "2026-10-12T00:23:25Z",
     "duration": 12,
@@ -61,17 +75,12 @@
     "status": "applied"
   },
   {
-    "issue": 38,
+    "issue": 41,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-10-12T00:18:02Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
-  },
-  {
-    "issue": 39,
-    "player": "ravazzoligabriel-commits",
-    "created": "2026-10-12T00:22:31Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "created": "2026-10-12T00:25:52Z",
+    "status": "applied",
+    "button": "LEFT",
+    "duration": 12,
+    "state_sha256": "6d7539136a873a78e79a4897ea378a1ef354664f74d9ff9656de49797bb1edc3"
   }
 ]
