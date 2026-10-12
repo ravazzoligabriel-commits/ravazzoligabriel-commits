@@ -5,7 +5,7 @@
 
 <img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/header-firered-v1.svg" alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-518cdf3d8d4afdaf.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-ed81082e5cee636d.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
 <sub>Latest game snapshot · Allow about 15–30 seconds after sending a command, then refresh.</sub>
 
@@ -21,7 +21,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| DOWN · 12 frames | joao-bortoluz | 11 |
+| B · 12 frames | ravazzoligabriel-commits | 12 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [About me](#gabriel-ravazzoli)
 
@@ -35,7 +35,7 @@
 
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
-| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **9** |
+| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **10** |
 | 🥈 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>

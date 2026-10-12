@@ -111,12 +111,21 @@
     "status": "applied"
   },
   {
+    "button": "DOWN",
+    "created": "2026-10-12T01:57:57Z",
+    "duration": 12,
     "issue": 45,
     "player": "joao-bortoluz",
-    "created": "2026-10-12T01:57:57Z",
+    "state_sha256": "c90fe04a7ce9f929276f16adf18ba54bafc7a7abffaadf2bcb03d50f7b540166",
+    "status": "applied"
+  },
+  {
+    "issue": 46,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-10-12T02:15:47Z",
     "status": "applied",
-    "button": "DOWN",
+    "button": "B",
     "duration": 12,
-    "state_sha256": "c90fe04a7ce9f929276f16adf18ba54bafc7a7abffaadf2bcb03d50f7b540166"
+    "state_sha256": "34d358b4ede950b91f7f4f3a03df8c0d55412874a8c23371234f966425e0980a"
   }
 ]
