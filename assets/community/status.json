@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 28940,
-  "total": 7,
+  "frames": 29012,
+  "total": 8,
   "last": {
-    "button": "LEFT",
-    "created": "2026-10-12T00:25:52Z",
-    "duration": 12,
-    "issue": 41,
+    "issue": 42,
     "player": "ravazzoligabriel-commits",
-    "state_sha256": "6d7539136a873a78e79a4897ea378a1ef354664f74d9ff9656de49797bb1edc3",
-    "status": "applied"
+    "created": "2026-10-12T00:31:14Z",
+    "status": "applied",
+    "button": "LEFT",
+    "duration": 12,
+    "state_sha256": "03ab2a37329431eab9e90862949ae480d4bcca5738c6aaba3736b86e3c726c1e"
   },
-  "screen_sha256": "db446add7516178a9eeea1061a247a3b7e0d732fa90bba900f4ef5b4ce20be6d",
+  "screen_sha256": "1cd07e53cd8ea6ff486147d9d4e8c4d5087ce1aaf5056b07ecaa368acb57ea04",
   "mode": "firered"
 }
