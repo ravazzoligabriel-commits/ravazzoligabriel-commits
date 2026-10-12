@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 29156,
-  "total": 10,
+  "frames": 29228,
+  "total": 11,
   "last": {
-    "issue": 44,
+    "issue": 45,
     "player": "joao-bortoluz",
-    "created": "2026-10-12T01:55:58Z",
+    "created": "2026-10-12T01:57:57Z",
     "status": "applied",
-    "button": "START",
+    "button": "DOWN",
     "duration": 12,
-    "state_sha256": "43a1013fa1e721bd9686530fc9b75e1002f3e908252cecb2f0106455892cc1b4"
+    "state_sha256": "c90fe04a7ce9f929276f16adf18ba54bafc7a7abffaadf2bcb03d50f7b540166"
   },
-  "screen_sha256": "cd043435fd7d15e38cbbed4c9a5245eb1b8331f7f152ea05fd62001347c13998",
+  "screen_sha256": "518cdf3d8d4afdaf2c80a798b69b0754aa60d607c8d05fb0d9f561bdfb23737f",
   "mode": "firered"
 }

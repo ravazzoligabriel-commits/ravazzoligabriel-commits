@@ -102,12 +102,21 @@
     "status": "applied"
   },
   {
+    "button": "START",
+    "created": "2026-10-12T01:55:58Z",
+    "duration": 12,
     "issue": 44,
     "player": "joao-bortoluz",
-    "created": "2026-10-12T01:55:58Z",
+    "state_sha256": "43a1013fa1e721bd9686530fc9b75e1002f3e908252cecb2f0106455892cc1b4",
+    "status": "applied"
+  },
+  {
+    "issue": 45,
+    "player": "joao-bortoluz",
+    "created": "2026-10-12T01:57:57Z",
     "status": "applied",
-    "button": "START",
+    "button": "DOWN",
     "duration": 12,
-    "state_sha256": "43a1013fa1e721bd9686530fc9b75e1002f3e908252cecb2f0106455892cc1b4"
+    "state_sha256": "c90fe04a7ce9f929276f16adf18ba54bafc7a7abffaadf2bcb03d50f7b540166"
   }
 ]
