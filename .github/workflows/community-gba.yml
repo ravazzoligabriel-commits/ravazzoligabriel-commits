@@ -1,7 +1,9 @@
 name: Community GBA turns
 on:
   issues:
-    types: [opened, reopened, closed]
+    # The worker reads every [gba] Issue (open or closed) and closes it after
+    # processing, so a 'closed' trigger only queued a redundant second run.
+    types: [opened, reopened]
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
@@ -44,6 +46,8 @@ jobs:
         run: |
           python -c "from community.session import key_from_env; key_from_env()"
       - uses: ./.github/actions/setup-mgba
+        with:
+          build-demo: ${{ !(github.event_name == 'issues' && env.GAME_MODE == 'firered') }}
       - name: Verify engine before any write
         # Full regression runs validate code changes and scheduled/manual checks.
         # Visitor turns still verify ROM digest, authenticated state and core at runtime.

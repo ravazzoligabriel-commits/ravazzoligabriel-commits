@@ -1,3 +1,10 @@
+<div align="center">
+
+**Gabriel Ravazzoli** · DevSecOps intern · automation, infrastructure & backend
+<br /><sub>Below is a real Pokémon FireRed game anyone can play from this page. [About me ↓](#gabriel-ravazzoli)</sub>
+
+</div>
+
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
@@ -7,7 +14,7 @@
 
 <img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-ed81082e5cee636d.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
-<sub>Latest game snapshot · Allow about 15–30 seconds after sending a command, then refresh.</sub>
+<sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
 
 
@@ -37,6 +44,7 @@
 | :---: | :--- | ---: |
 | 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **10** |
 | 🥈 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
+| 3 | **Your name here** — [take a turn ↑](#pokémon-firered) | 0 |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 
@@ -44,20 +52,17 @@
 
 A real game of **Pokémon FireRed**, played together through GitHub. Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.
 
-> **Click a control → submit the prefilled Issue → click Close issue → return here and refresh.**
-> **Update delay: allow about 15–30 seconds, then refresh.** Latest timing check: **16 seconds** to finish processing. GitHub queues and image caching can take longer.
+> **Click a button → Create → refresh here in ~20 seconds.**
+> No PR, no emulator, no ROM. One command per player every 30 seconds.
 
-<sub>The 30-second interval between accepted commands is a separate per-player cooldown. [Timing details](docs/latency.md) · [Processing status](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/workflows/community-gba.yml)</sub>
-
-**No pull request needed.** Click **Create**, then **Close issue** on the next page. If it is already closed, just return here. Each command is processed only once.
+<sub>[Timing details](docs/latency.md) · [Processing status](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/actions/workflows/community-gba.yml)</sub>
 
 <details>
 <summary><strong>First time here? Open the step-by-step guide</strong></summary>
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
-3. **Click Close issue** (or **Close with comment**) on the Issue page. Closing also triggers processing; if the automation already closed it, continue.
-4. **[Return to the profile](https://github.com/ravazzoligabriel-commits#pok%C3%A9mon-firered) and refresh after about 15–30 seconds.** Queues or image caching can add time. Check the new screen before sending your next command.
+3. **[Return to the profile](https://github.com/ravazzoligabriel-commits#pok%C3%A9mon-firered) and refresh after about 20 seconds.** Queues or image caching can add time. Check the new screen before sending your next command.
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
@@ -100,9 +105,11 @@ Some dialogues need more than one **A** command. Progress is saved automatically
 
 </div>
 
-I build software that makes complicated workflows easier to run, understand and maintain.
-My work connects **automation, backend development, AI-assisted pipelines and systems architecture**.
-Outside of professional work, I explore creative software and independent game development.
+DevSecOps intern. Day to day I automate infrastructure, wire up integrations and build backend services and dashboards.
+Main stack: **TypeScript / Node.js, GitHub Actions, Docker, AWS and Azure**.
+On the side I build AI-assisted pipelines and an indie 2D game in Godot.
+
+The FireRed game above is a good sample of how I work: a Python + mGBA emulator running inside GitHub Actions, driven by Issues, with a persistent save, cooldowns and a leaderboard. [See how it works →](docs/community-gba.md)
 
 ## What I work with
 
@@ -112,8 +119,10 @@ Outside of professional work, I explore creative software and independent game d
 
 <img src="assets/profile/projects-v1.svg" alt="Shiina: Node.js and TypeScript automation and AI experiments. Gutenberg: web interfaces and frontend experimentation. Offer Automation: marketplace data collection, selection and presentation pipelines." width="880" />
 
+<sub>These repositories are private for now — happy to walk through them on request.</sub>
+
 <details>
-<summary><strong>Explore the project notes</strong></summary>
+<summary><strong>Project details</strong></summary>
 
 **Shiina** — An automation and AI experimentation project built around Node.js and TypeScript. It explores tool orchestration, structured execution, logging and small creative automation experiments.
 
