@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-8d9b19d2c80a4f17.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-076f1dc711c9a617.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
