@@ -89,7 +89,7 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
 Click the green **Create / Submit new issue** button below. Opening this form alone does not send a command.
 
 ### 2. Return to the game
-[Back to the profile — see the updated game](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered)
+[Back to the profile — see the updated game](https://github.com/{repository.split('/')[0]}#actual-game-running-in-github)
 
 **Allow about 20 seconds, then refresh the profile.** No need to close this Issue — the game closes it after processing.
 
@@ -158,7 +158,7 @@ Wait at least 30 seconds between commands from the same account. The command is 
     if not ranking_rows:
         ranking_rows='| — | Be the first player! | 0 |'
     if len(leaders)<10:
-        ranking_rows+=f"\n| {len(leaders)+1} | **Your name here** — [take a turn ↑](#pokémon-firered) | 0 |"
+        ranking_rows+=f"\n| {len(leaders)+1} | **Your name here** — [take a turn ↑](#actual-game-running-in-github) | 0 |"
     block=f'''{BEGIN}
 <div align="center">
 
@@ -210,7 +210,7 @@ Wait at least 30 seconds between commands from the same account. The command is 
 
 1. **Choose a button above.** It opens an Issue with the command already filled in.
 2. Sign in to GitHub and click **Create / Submit new issue** to send it. Opening the Issue form alone does not send a command.
-3. **[Return to the profile](https://github.com/{repository.split('/')[0]}#pok%C3%A9mon-firered) and refresh after about 20 seconds.** Queues or image caching can add time. Check the new screen before sending your next command.
+3. **[Return to the profile](https://github.com/{repository.split('/')[0]}#actual-game-running-in-github) and refresh after about 20 seconds.** Queues or image caching can add time. Check the new screen before sending your next command.
 
 You do not need to install an emulator or download the ROM. The game runs in the automation, and the README displays its output.
 **Wait at least 30 seconds between commands from the same account.** Other visitors can also play and change the screen.
