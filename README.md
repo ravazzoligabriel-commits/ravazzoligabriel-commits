@@ -1,9 +1,13 @@
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
-## POKÉMON FIRERED
+### Yes, that's an actual game running below.
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/header-firered-v1.svg" alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />
+And yes, you can actually play it through GitHub.
+
+Just pick a command, submit a pull request updating the README, and refresh this page to see the game react to your action.
+
+**Is it practical? Absolutely not. Is it impressive? I'd say so.**
 
 <img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-8d9b19d2c80a4f17.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
 
