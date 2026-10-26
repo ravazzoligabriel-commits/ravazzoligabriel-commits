@@ -7,7 +7,7 @@ pelo jogo. A ROM e o estado completo ficam em um repositório privado. Visitante
 participam enviando comandos, sem instalar nada nem receber a ROM.
 
 **Como participar:** clique em um botão do README, entre no GitHub e confirme em
-**Create / Submit new issue**, depois clique em **Close issue**. Volte ao perfil
+**Create / Submit new issue**. A Issue é fechada automaticamente após o processamento. Volte ao perfil
 e atualize a página. A direção move o personagem ou o cursor, **A** confirma e
 avança diálogos, **B** cancela, **START** abre o menu e **SELECT** usa o item
 registrado quando disponível. **L/R** abrem a ajuda na configuração padrão do

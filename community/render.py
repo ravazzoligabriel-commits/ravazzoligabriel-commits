@@ -62,9 +62,10 @@ def render(root, emulator, session, repository, branch, mode='homebrew'):
     draw.text((80,31),'COMMUNITY ADVENTURE',font=small,fill='#bd666c')
     draw.text((702,31),'mGBA / GBA',font=small,fill='#a2a8ad')
     frame.paste(emulator.image.resize((720,480),Image.Resampling.NEAREST),(80,80))
-    draw.text((314,605),'GAME BOY ADVANCE',font=font,fill='#bbc0c5')
+    draw.text((440,605),'GITBOY ADVANCED',font=font,anchor='mt',fill='#bbc0c5')
     screen_hash = hashlib.sha256(raw.read_bytes()).hexdigest()
-    name = f'console-{screen_hash[:16]}.png'
+    # Include the bezel in the digest so branding edits always get a fresh CDN URL.
+    name = f'console-{hashlib.sha256(frame.tobytes()).hexdigest()[:16]}.png'
     frame.save(assets/name)
     # A changing filename gives Camo/CDN a new URL. Retain current and previous.
     existing = sorted((p for p in assets.glob('console-*.png') if p.name!=name),
@@ -138,15 +139,19 @@ Wait at least 30 seconds between commands from the same account. The command is 
 <td align="center" colspan="2">{controls['START']}</td>
 </tr>
 </table>'''
-    title = 'POKÉMON FIRERED' if mode=='firered' else 'GBA PIXEL ADVENTURE'
+    title = 'ACTUAL GAME RUNNING IN GITHUB' if mode=='firered' else 'GBA PIXEL ADVENTURE'
     description = ('A real game of **Pokémon FireRed**, played together through GitHub. '
                    'Everyone controls the **same character and the same save**: each command continues the adventure where the last visitor left off.'
                    if mode=='firered' else 'A community GBA homebrew adventure with one shared save.')
     preview = '\nDevelopment preview: test turns run when the maintainer pushes engine changes. Automatic visitor turns activate after merging the PR.\n' if branch!='main' else ''
     image_url=f'https://raw.githubusercontent.com/{repository}/{branch}/assets/community/{name}'
-    opening=(f'<img src="https://raw.githubusercontent.com/{repository}/{branch}/assets/community/header-firered-v1.svg" '
-             'alt="Play FireRed together — a real GBA adventure on GitHub. One shared save. Everyone takes a turn." width="660" />'
-             if mode=='firered' else description)
+    opening = (
+        '**Yes, this is a real game, not a GIF.** A GBA emulator runs through GitHub Actions; this profile shows the actual latest frame.\n\n'
+        '**How to play:** Click a button below, submit the prefilled **GitHub Issue**, then refresh this page after about 20 seconds. One shared save. Everyone takes a turn.\n\n'
+        '**Practical? Absolutely not. Impressive? You tell me.**\n\n'
+        '[How to play](#how-to-play) · [How it works](docs/community-gba.md)'
+        if mode=='firered' else description
+    )
     leaders=leaderboard(session.data['ledger'])
     medals={1:'🥇',2:'🥈',3:'🥉'}
     ranking_rows='\n'.join(f"| {medals.get(entry['rank'],entry['rank'])} | [@{html.escape(entry['player'])}]({entry['profile']}) | **{entry['commands']}** |" for entry in leaders)
@@ -161,13 +166,13 @@ Wait at least 30 seconds between commands from the same account. The command is 
 
 {opening}
 
-<img src="{image_url}" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+<img src="{image_url}" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
 {preview}
 
-**YOUR TURN — choose a button**
+**YOUR TURN · CLICK A BUTTON TO PLAY**
 
 {pad}
 

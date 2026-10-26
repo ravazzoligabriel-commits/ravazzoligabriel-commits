@@ -1,21 +1,23 @@
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
-### Yes, that's an actual game running below.
+## ACTUAL GAME RUNNING IN GITHUB
 
-And yes, you can actually play it through GitHub.
+**Yes, this is a real game, not a GIF.** A GBA emulator runs through GitHub Actions; this profile shows the actual latest frame.
 
-Just pick a command, submit a pull request updating the README, and refresh this page to see the game react to your action.
+**How to play:** Click a button below, submit the prefilled **GitHub Issue**, then refresh this page after about 20 seconds. One shared save. Everyone takes a turn.
 
-**Is it practical? Absolutely not. Is it impressive? I'd say so.**
+**Practical? Absolutely not. Impressive? You tell me.**
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-8d9b19d2c80a4f17.png" alt="Actual mGBA output in a graphite GBA frame" width="660" />
+[How to play](#how-to-play) · [How it works](docs/community-gba.md)
+
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-8d9b19d2c80a4f17.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
 
 
-**YOUR TURN — choose a button**
+**YOUR TURN · CLICK A BUTTON TO PLAY**
 
 <table align="center">
 <tr>
