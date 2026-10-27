@@ -147,21 +147,28 @@
     "status": "applied"
   },
   {
+    "button": "RIGHT",
+    "created": "2026-10-27T17:25:03Z",
+    "duration": 12,
     "issue": 50,
     "player": "eduualvesss",
-    "created": "2026-10-27T17:25:03Z",
-    "status": "applied",
-    "button": "RIGHT",
-    "duration": 12,
-    "state_sha256": "046a538a69e06a4e455c80f33a8b55709f4ed703fc2bc8bdcd0280bc72e4bbf6"
+    "state_sha256": "046a538a69e06a4e455c80f33a8b55709f4ed703fc2bc8bdcd0280bc72e4bbf6",
+    "status": "applied"
   },
   {
+    "button": "R",
+    "created": "2026-10-27T18:14:41Z",
+    "duration": 12,
     "issue": 51,
     "player": "itim245",
-    "created": "2026-10-27T18:14:41Z",
-    "status": "applied",
-    "button": "R",
-    "duration": 12,
-    "state_sha256": "f8e5414af1ae9a000c0160d11aa1805828595ab93e3fef35427ed3526b9c91de"
+    "state_sha256": "f8e5414af1ae9a000c0160d11aa1805828595ab93e3fef35427ed3526b9c91de",
+    "status": "applied"
+  },
+  {
+    "issue": 52,
+    "player": "itim245",
+    "created": "2026-10-27T18:15:07Z",
+    "status": "rejected",
+    "reason": "One accepted command per player per 30 seconds"
   }
 ]
