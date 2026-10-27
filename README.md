@@ -1,27 +1,3 @@
-<!-- CURRENTLY-BUILDING:START -->
-<div align="center">
-
-## WHAT I'M BUILDING RIGHT NOW
-
-# VALORANT, BUT IN MY BROWSER
-
-**Actual FPS gameplay rendered in a browser. Not a stream. Not a mockup.**
-
-<img src="assets/profile/valorant-browser-gameplay.webp" alt="Actual gameplay of my work-in-progress, unofficial VALORANT-inspired browser FPS" width="760" />
-
-<sub>Real in-browser gameplay · 12-second looping preview · Early development</sub>
-
-<br /><br />
-
-I'm rebuilding the feel of a tactical FPS for the web, experimenting with rendering, movement, weapons and game systems.
-
-**Unofficial fan experiment. Work in progress.**
-
-</div>
-<!-- CURRENTLY-BUILDING:END -->
-
----
-
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
@@ -143,3 +119,34 @@ Some dialogues need more than one **A** command. Progress is saved automatically
 [Command queue](https://github.com/ravazzoligabriel-commits/ravazzoligabriel-commits/issues?q=is%3Aissue+is%3Aopen+%5Bgba%5D) · [Raw game screen](assets/community/screen.png) · [How the project works](docs/community-gba.md)
 
 <!-- COMMUNITY-GBA:END -->
+
+---
+
+<!-- CURRENTLY-BUILDING:START -->
+<div align="center">
+
+## WHAT I'M BUILDING RIGHT NOW
+
+<table>
+<tr>
+<td width="50%" valign="top" align="center">
+<h3>VALORANT, BUT IN MY BROWSER</h3>
+<img src="assets/profile/valorant-browser-gameplay.webp" alt="Actual gameplay of an unofficial Valorant-inspired browser FPS" width="320" />
+<br />
+<sub>Real FPS gameplay, rendered in the browser.</sub>
+<br /><br />
+<sub>Unofficial fan experiment · Work in progress</sub>
+</td>
+<td width="50%" valign="top" align="center">
+<h3>SIGILO · OCCULT ROGUELITE</h3>
+<img src="assets/profile/sigilo-card.webp" alt="Animated gameplay of SIGILO, a 2D occult roguelite" width="320" />
+<br />
+<sub>Pixel-art combat, rituals and cosmic horror.</sub>
+<br /><br />
+<sub>Indie game prototype · Work in progress</sub>
+</td>
+</tr>
+</table>
+
+</div>
+<!-- CURRENTLY-BUILDING:END -->
