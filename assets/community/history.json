@@ -172,19 +172,19 @@
     "status": "rejected"
   },
   {
+    "button": "A",
+    "created": "2026-10-27T18:15:28Z",
+    "duration": 12,
     "issue": 53,
     "player": "itim245",
-    "created": "2026-10-27T18:15:28Z",
-    "status": "applied",
-    "button": "A",
-    "duration": 12,
-    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214"
+    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214",
+    "status": "applied"
   },
   {
+    "created": "2026-10-27T18:15:39Z",
     "issue": 54,
     "player": "itim245",
-    "created": "2026-10-27T18:15:39Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
   }
 ]

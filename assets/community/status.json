@@ -6,13 +6,13 @@
   "frames": 29660,
   "total": 17,
   "last": {
+    "button": "A",
+    "created": "2026-10-27T18:15:28Z",
+    "duration": 12,
     "issue": 53,
     "player": "itim245",
-    "created": "2026-10-27T18:15:28Z",
-    "status": "applied",
-    "button": "A",
-    "duration": 12,
-    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214"
+    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214",
+    "status": "applied"
   },
   "screen_sha256": "f19197f7d31e41c1c631b2b48d6364f662649e0ce9c334768ae61161b3ea213e",
   "mode": "firered"
