@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-076f1dc711c9a617.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-00792fc008c0fea7.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| DOWN · 12 frames | ravazzoligabriel-commits | 14 |
+| R · 12 frames | itim245 | 16 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -71,7 +71,9 @@
 | :---: | :--- | ---: |
 | 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **12** |
 | 🥈 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
-| 3 | **Your name here** — [take a turn ↑](#actual-game-running-in-github) | 0 |
+| 🥉 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
+| 4 | [@itim245](https://github.com/itim245) | **1** |
+| 5 | **Your name here** — [take a turn ↑](#actual-game-running-in-github) | 0 |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 
