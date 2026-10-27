@@ -1,3 +1,27 @@
+<!-- CURRENTLY-BUILDING:START -->
+<div align="center">
+
+## WHAT I'M BUILDING RIGHT NOW
+
+# VALORANT, BUT IN MY BROWSER
+
+**Actual FPS gameplay rendered in a browser. Not a stream. Not a mockup.**
+
+<img src="assets/profile/valorant-browser-gameplay.webp" alt="Actual gameplay of my work-in-progress, unofficial VALORANT-inspired browser FPS" width="760" />
+
+<sub>Real in-browser gameplay · 12-second looping preview · Early development</sub>
+
+<br /><br />
+
+I'm rebuilding the feel of a tactical FPS for the web, experimenting with rendering, movement, weapons and game systems.
+
+**Unofficial fan experiment. Work in progress.**
+
+</div>
+<!-- CURRENTLY-BUILDING:END -->
+
+---
+
 <!-- COMMUNITY-GBA:START -->
 <div align="center">
 
