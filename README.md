@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-1275ee2770b48c1c.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-c2ab1db990b8bbc7.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| START · 12 frames | Miireee | 18 |
+| B · 12 frames | ravazzoligabriel-commits | 19 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -69,7 +69,7 @@
 
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
-| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **12** |
+| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **13** |
 | 🥈 | [@itim245](https://github.com/itim245) | **2** |
 | 🥉 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
 | 4 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
