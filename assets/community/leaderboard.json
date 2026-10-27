@@ -7,20 +7,20 @@
   },
   {
     "rank": 2,
+    "player": "itim245",
+    "commands": 2,
+    "profile": "https://github.com/itim245"
+  },
+  {
+    "rank": 3,
     "player": "joao-bortoluz",
     "commands": 2,
     "profile": "https://github.com/joao-bortoluz"
   },
   {
-    "rank": 3,
+    "rank": 4,
     "player": "eduualvesss",
     "commands": 1,
     "profile": "https://github.com/eduualvesss"
-  },
-  {
-    "rank": 4,
-    "player": "itim245",
-    "commands": 1,
-    "profile": "https://github.com/itim245"
   }
 ]

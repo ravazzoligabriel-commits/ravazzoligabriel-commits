@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 29588,
-  "total": 16,
+  "frames": 29660,
+  "total": 17,
   "last": {
-    "button": "R",
-    "created": "2026-10-27T18:14:41Z",
-    "duration": 12,
-    "issue": 51,
+    "issue": 53,
     "player": "itim245",
-    "state_sha256": "f8e5414af1ae9a000c0160d11aa1805828595ab93e3fef35427ed3526b9c91de",
-    "status": "applied"
+    "created": "2026-10-27T18:15:28Z",
+    "status": "applied",
+    "button": "A",
+    "duration": 12,
+    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214"
   },
-  "screen_sha256": "a1e35fa55590b64ed77e5f74e2e1dd818edcdf9e199214db5300f78da19d0f6e",
+  "screen_sha256": "f19197f7d31e41c1c631b2b48d6364f662649e0ce9c334768ae61161b3ea213e",
   "mode": "firered"
 }
