@@ -3,16 +3,16 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 29660,
-  "total": 17,
+  "frames": 29732,
+  "total": 18,
   "last": {
-    "button": "A",
-    "created": "2026-10-27T18:15:28Z",
+    "issue": 55,
+    "player": "Miireee",
+    "created": "2026-10-27T20:27:05Z",
+    "status": "applied",
+    "button": "START",
     "duration": 12,
-    "issue": 53,
-    "player": "itim245",
-    "state_sha256": "b1484c0ea3937e9b55d9210b21ba42a6a03ce5b12bd87ff67c3020e2a96ad214",
-    "status": "applied"
+    "state_sha256": "e3c52605e2d199c29497e12c6c0e3d67e0842dded16119decf4aa3b624c2d746"
   },
   "screen_sha256": "f19197f7d31e41c1c631b2b48d6364f662649e0ce9c334768ae61161b3ea213e",
   "mode": "firered"

@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| A · 12 frames | itim245 | 17 |
+| START · 12 frames | Miireee | 18 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -73,7 +73,8 @@
 | 🥈 | [@itim245](https://github.com/itim245) | **2** |
 | 🥉 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
 | 4 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
-| 5 | **Your name here** — [take a turn ↑](#actual-game-running-in-github) | 0 |
+| 5 | [@Miireee](https://github.com/Miireee) | **1** |
+| 6 | **Your name here** — [take a turn ↑](#actual-game-running-in-github) | 0 |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 
