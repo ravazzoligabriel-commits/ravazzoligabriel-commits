@@ -131,7 +131,7 @@ Some dialogues need more than one **A** command. Progress is saved automatically
 <tr>
 <td width="50%" valign="top" align="center">
 <h3>VALORANT, BUT IN MY BROWSER</h3>
-<img src="assets/profile/valorant-browser-gameplay.webp" alt="Actual gameplay of an unofficial Valorant-inspired browser FPS" width="320" />
+<img src="assets/profile/valorant-final-hq.webp" alt="Actual gameplay of an unofficial Valorant-inspired browser FPS" width="320" />
 <br />
 <sub>Real FPS gameplay, rendered in the browser.</sub>
 <br /><br />
@@ -139,7 +139,7 @@ Some dialogues need more than one **A** command. Progress is saved automatically
 </td>
 <td width="50%" valign="top" align="center">
 <h3>SIGILO · OCCULT ROGUELITE</h3>
-<img src="assets/profile/sigilo-card.webp" alt="Animated gameplay of SIGILO, a 2D occult roguelite" width="320" />
+<img src="assets/profile/sigilo-hq.webp" alt="Animated gameplay of SIGILO, a 2D occult roguelite" width="320" />
 <br />
 <sub>Pixel-art combat, rituals and cosmic horror.</sub>
 <br /><br />
