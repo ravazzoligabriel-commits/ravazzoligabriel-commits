@@ -1,5 +1,5 @@
 name: Community GBA turns
-# Refresh README controls with the classic Game Boy-inspired v3 hardware assets.
+# Restore the previous v2 GitBoy control artwork in the public README.
 on:
   issues:
     types: [opened, reopened]
