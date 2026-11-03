@@ -8,7 +8,7 @@ This profile hosts a **shared**, real Game Boy Advance game controlled through G
 2. Submit the prefilled GitHub Issue (just opening the form does not send a command).
 3. Return to the profile and refresh after the command is processed. Other visitors may have played meanwhile.
 
-**Arrows:** movement / menus. **A:** confirm. **B:** back. **START:** menu. **SELECT:** registered item. **L/R:** contextual functions or help. You may adjust the prefilled 12-frame hold to 1–120 frames in the Issue title. Wait at least 30 seconds between commands from one account.
+**Arrows:** movement / menus. **A:** confirm. **B:** back. **START:** menu. **SELECT:** registered item. **L/R:** contextual functions or help. You may adjust the prefilled 12-frame hold to 1–120 frames in the Issue title. There is no artificial per-player cooldown. Commands still execute one at a time, so check the latest frame before deciding the next move.
 
 The screenshot is a real emulator frame, not a GIF. The ROM, saved game, backups and engine source are managed **privately**. The public profile serves only the button links, latest frame, command statistics and shared leaderboard.
 
