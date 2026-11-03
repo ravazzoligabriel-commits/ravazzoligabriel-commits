@@ -396,5 +396,14 @@
     "player": "sjh1302025-wq",
     "state_sha256": "858176805200eb98929b7f822666b91aebb04581c20f0aa8ce8cb8d77f1b5888",
     "status": "applied"
+  },
+  {
+    "issue": 84,
+    "player": "rian213",
+    "created": "2026-11-03T21:06:21Z",
+    "status": "applied",
+    "button": "UP",
+    "duration": 12,
+    "state_sha256": "c9543f3b16612dac8de00dd0a218459115a99cbbdedfb3c37086412b4eacb235"
   }
 ]
