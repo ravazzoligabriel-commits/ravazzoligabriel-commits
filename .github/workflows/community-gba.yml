@@ -12,6 +12,10 @@ on:
         description: Apply reviewed private trainer preparation once
         type: boolean
         default: false
+      restore_turn:
+        description: 'Restore private checkpoint from before Issue number (leave blank for normal runs)'
+        type: string
+        default: ''
   push:
     branches: [feat/community-gba, main]
     paths: ['community/**', 'homebrew/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba.yml']
@@ -77,6 +81,7 @@ jobs:
           TARGET_BRANCH: ${{ github.event_name == 'issues' && github.event.repository.default_branch || github.ref_name }}
           CANARY: ${{ github.ref_name != github.event.repository.default_branch }}
           OPERATOR_PLAN: ${{ github.event_name == 'workflow_dispatch' && inputs.operator_plan || false }}
+          RESTORE_TURN: ${{ github.event_name == 'workflow_dispatch' && inputs.restore_turn || '' }}
         run: |
           if [[ "$CANARY" == 'true' ]]; then
             python -m community.worker --core runtime/core/mgba_libretro.so --rom runtime/demo.gba --branch "$TARGET_BRANCH" --canary --publish
@@ -86,6 +91,12 @@ jobs:
             operator_args=()
             if [[ "$OPERATOR_PLAN" == 'true' ]]; then
               operator_args=(--operator-plan private/operator-plan.json)
+            fi
+            if [[ -n "$RESTORE_TURN" ]]; then
+              if [[ ! "$RESTORE_TURN" =~ ^[1-9][0-9]*$ ]]; then
+                echo 'Restore turn must be a positive Issue number' >&2; exit 1
+              fi
+              operator_args+=(--restore-turn "$RESTORE_TURN")
             fi
             python -m community.worker --core runtime/core/mgba_libretro.so --rom private/cartridge.gba --state-root private --state-branch main --branch "$TARGET_BRANCH" --mode firered --publish "${operator_args[@]}"
           else
