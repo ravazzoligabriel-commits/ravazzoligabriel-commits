@@ -1,8 +1,6 @@
 name: Community GBA turns
 on:
   issues:
-    # The worker reads every [gba] Issue (open or closed) and closes it after
-    # processing, so a 'closed' trigger only queued a redundant second run.
     types: [opened, reopened]
   schedule:
     - cron: '7,22,37,52 * * * *'
@@ -17,8 +15,8 @@ on:
         type: string
         default: ''
   push:
-    branches: [feat/community-gba, main]
-    paths: ['community/**', 'homebrew/**', 'requirements.txt', '.github/actions/setup-mgba/**', '.github/workflows/community-gba.yml']
+    branches: [feat/gitboy-private-runner, main]
+    paths: ['.github/workflows/community-gba.yml']
 permissions: {}
 concurrency:
   group: community-gba
@@ -41,26 +39,13 @@ jobs:
       PRIVATE_REPOSITORY: ${{ vars.GBA_PRIVATE_REPOSITORY }}
       PRIVATE_TOKEN: ${{ secrets.GBA_PRIVATE_TOKEN }}
       ROM_SHA256: ${{ vars.GBA_ROM_SHA256 }}
+      PYTHONPATH: ${{ github.workspace }}/private
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Checkout public profile facade
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          # Issues always run trusted default-branch code. PRs never enter this workflow.
           ref: ${{ github.event_name == 'issues' && github.event.repository.default_branch || github.ref_name }}
-      - name: Check session configuration
-        run: |
-          python -c "from community.session import key_from_env; key_from_env()"
-      - uses: ./.github/actions/setup-mgba
-        with:
-          build-demo: ${{ !(github.event_name == 'issues' && env.GAME_MODE == 'firered') }}
-      - name: Verify engine before any write
-        # Full regression runs validate code changes and scheduled/manual checks.
-        # Visitor turns still verify ROM digest, authenticated state and core at runtime.
-        if: github.event_name != 'issues'
-        env:
-          MGBA_CORE: runtime/core/mgba_libretro.so
-        run: python -m unittest discover -s tests -v
-      - name: Load private FireRed cartridge and state
-        if: env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
+      - name: Checkout private engine, cartridge and encrypted state
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: ${{ vars.GBA_PRIVATE_REPOSITORY }}
@@ -68,14 +53,30 @@ jobs:
           ssh-key: ${{ secrets.GBA_PRIVATE_SSH_KEY }}
           ref: main
           path: private
-      - name: Verify privately supplied FireRed before publication
+      - name: Validate private engine and encryption configuration
+        shell: bash
+        run: |
+          test -f private/community/worker.py
+          test ! -e community/worker.py
+          python -c "from community.session import key_from_env; key_from_env()"
+      - name: Build pinned emulator via private engine
+        uses: ./private/.github/actions/setup-mgba
+        with:
+          engine-root: private
+          build-demo: ${{ github.ref_name != github.event.repository.default_branch || env.GAME_MODE != 'firered' }}
+      - name: Verify private emulator engine before public writes
+        if: github.event_name != 'issues'
+        env:
+          MGBA_CORE: runtime/core/mgba_libretro.so
+        run: python -m unittest discover -s private/tests -v
+      - name: Verify private FireRed cartridge and continuation
         if: github.event_name != 'issues' && env.GAME_MODE == 'firered' && github.ref_name == github.event.repository.default_branch
         env:
           MGBA_CORE: runtime/core/mgba_libretro.so
           FIRERED_ROM: private/cartridge.gba
           GBA_DIAGNOSTICS_PUSH: 'true'
-        run: python -m unittest discover -s tests -p test_firered.py -v
-      - name: Process durable Issue queue and publish actual frame
+        run: python -m unittest discover -s private/tests -p test_firered.py -v
+      - name: Process issue queue with private engine and publish public-only visuals
         shell: bash
         env:
           TARGET_BRANCH: ${{ github.event_name == 'issues' && github.event.repository.default_branch || github.ref_name }}
