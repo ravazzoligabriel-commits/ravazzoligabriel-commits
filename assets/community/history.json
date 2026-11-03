@@ -398,12 +398,12 @@
     "status": "applied"
   },
   {
+    "button": "UP",
+    "created": "2026-11-03T21:06:21Z",
+    "duration": 12,
     "issue": 84,
     "player": "rian213",
-    "created": "2026-11-03T21:06:21Z",
-    "status": "applied",
-    "button": "UP",
-    "duration": 12,
-    "state_sha256": "c9543f3b16612dac8de00dd0a218459115a99cbbdedfb3c37086412b4eacb235"
+    "state_sha256": "c9543f3b16612dac8de00dd0a218459115a99cbbdedfb3c37086412b4eacb235",
+    "status": "applied"
   }
 ]
