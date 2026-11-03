@@ -1,4 +1,5 @@
 name: Community GBA turns
+# Refresh the README console after the private renderer adds transparent corners and a GitHub mark.
 on:
   issues:
     types: [opened, reopened]
