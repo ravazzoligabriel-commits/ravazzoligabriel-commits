@@ -215,12 +215,26 @@
     "status": "applied"
   },
   {
+    "button": "LEFT",
+    "created": "2026-11-03T00:50:34Z",
+    "duration": 12,
     "issue": 58,
     "player": "mufalla5",
-    "created": "2026-11-03T00:50:34Z",
-    "status": "applied",
-    "button": "LEFT",
-    "duration": 12,
-    "state_sha256": "9cc4ce3f07d14f437d47eee139711ac5317ee2a8fdce492b1bea43e4e07db218"
+    "state_sha256": "9cc4ce3f07d14f437d47eee139711ac5317ee2a8fdce492b1bea43e4e07db218",
+    "status": "applied"
+  },
+  {
+    "issue": 59,
+    "player": "mufalla5",
+    "created": "2026-11-03T00:50:48Z",
+    "status": "rejected",
+    "reason": "One accepted command per player per 30 seconds"
+  },
+  {
+    "issue": 60,
+    "player": "mufalla5",
+    "created": "2026-11-03T00:51:02Z",
+    "status": "rejected",
+    "reason": "One accepted command per player per 30 seconds"
   }
 ]
