@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| L · 12 frames | lazyboysobusy | 29 |
+| START · 12 frames | lazyboysobusy | 30 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -73,10 +73,10 @@
 | 🥈 | [@henrique05melo-spec](https://github.com/henrique05melo-spec) | **2** |
 | 🥉 | [@itim245](https://github.com/itim245) | **2** |
 | 4 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
-| 5 | [@mufalla5](https://github.com/mufalla5) | **2** |
-| 6 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
-| 7 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
-| 8 | [@lazyboysobusy](https://github.com/lazyboysobusy) | **1** |
+| 5 | [@lazyboysobusy](https://github.com/lazyboysobusy) | **2** |
+| 6 | [@mufalla5](https://github.com/mufalla5) | **2** |
+| 7 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
+| 8 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
 | 9 | [@Lerry1324](https://github.com/Lerry1324) | **1** |
 | 10 | [@Miireee](https://github.com/Miireee) | **1** |
 
