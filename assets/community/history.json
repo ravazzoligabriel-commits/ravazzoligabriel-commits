@@ -362,12 +362,30 @@
     "status": "rejected"
   },
   {
+    "button": "UP",
+    "created": "2026-11-03T12:18:09Z",
+    "duration": 12,
     "issue": 78,
     "player": "joao-bortoluz",
-    "created": "2026-11-03T12:18:09Z",
+    "state_sha256": "3952bd868260c918979b605217bed069800c444d09b5edd8b89bf65e89008537",
+    "status": "applied"
+  },
+  {
+    "issue": 79,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-11-03T12:36:45Z",
     "status": "applied",
-    "button": "UP",
+    "button": "DOWN",
     "duration": 12,
-    "state_sha256": "3952bd868260c918979b605217bed069800c444d09b5edd8b89bf65e89008537"
+    "state_sha256": "0637b7225fb99939673c5872f504fe7f4e7ab041f4f032c5916717f3cf66d572"
+  },
+  {
+    "issue": 81,
+    "player": "ravazzoligabriel-commits",
+    "created": "2026-11-03T12:50:49Z",
+    "status": "applied",
+    "button": "DOWN",
+    "duration": 12,
+    "state_sha256": "4b02bca0e63f2b61ce7a4f72fbe0f0f2774edb193cf422cf2530c434f6b8edf0"
   }
 ]
