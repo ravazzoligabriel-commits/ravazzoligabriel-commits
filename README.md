@@ -53,6 +53,26 @@
 </tr>
 </table>
 
+<h3>HOW YOUR TURN WORKS</h3>
+
+<table align="center">
+<tr>
+<th align="center">① CHOOSE</th>
+<th align="center">② CONFIRM</th>
+<th align="center">③ WAIT ⏳</th>
+<th align="center">④ REFRESH</th>
+</tr>
+<tr>
+<td align="center">Click a button above</td>
+<td align="center">Press <strong>Create / Submit new issue</strong></td>
+<td align="center"><strong>15–30s+ delay</strong> while the game processes</td>
+<td align="center">Return to this profile and refresh</td>
+</tr>
+</table>
+
+<p><strong>IMPORTANT: THERE IS A DELAY AFTER CONFIRMING THE ISSUE.</strong><br />
+GitHub Actions needs time to run your command and publish the new screen. A busy queue or image cache may make it take longer. No approval from the owner is required.</p>
+
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
 | DOWN · 12 frames | ravazzoligabriel-commits | 37 |
