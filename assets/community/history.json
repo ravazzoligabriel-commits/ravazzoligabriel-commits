@@ -283,12 +283,12 @@
     "status": "applied"
   },
   {
+    "button": "UP",
+    "created": "2026-11-03T09:30:03Z",
+    "duration": 12,
     "issue": 67,
     "player": "Lerry1324",
-    "created": "2026-11-03T09:30:03Z",
-    "status": "applied",
-    "button": "UP",
-    "duration": 12,
-    "state_sha256": "7aab6450b732e574f2e9a2b6e9fec5519accb332a34ec171f89f14fb322d9601"
+    "state_sha256": "7aab6450b732e574f2e9a2b6e9fec5519accb332a34ec171f89f14fb322d9601",
+    "status": "applied"
   }
 ]
