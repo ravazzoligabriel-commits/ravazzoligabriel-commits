@@ -337,12 +337,12 @@
     "status": "applied"
   },
   {
+    "button": "B",
+    "created": "2026-11-03T11:54:31Z",
+    "duration": 12,
     "issue": 73,
     "player": "lazyboysobusy",
-    "created": "2026-11-03T11:54:31Z",
-    "status": "applied",
-    "button": "B",
-    "duration": 12,
-    "state_sha256": "6749aef61a792c0c985ebc0140a9b3c8e3e0c2cd1923ba19f77e22058de9558e"
+    "state_sha256": "6749aef61a792c0c985ebc0140a9b3c8e3e0c2cd1923ba19f77e22058de9558e",
+    "status": "applied"
   }
 ]
