@@ -37,9 +37,10 @@ def decode(data, key):
     return json.loads(zlib.decompress(AESGCM(key).decrypt(data[:12],data[12:],AAD)))
 
 class Session:
-    def __init__(self, emulator, snapshot=None, boot_frames=120, release_frames=2):
+    def __init__(self, emulator, snapshot=None, boot_frames=120, release_frames=2, safety_mode='homebrew'):
         self.emulator = emulator
         self.release_frames = release_frames
+        self.safety_mode = safety_mode
         self.data = snapshot or dict(schema=1,rom=emulator.rom_hash,version=emulator.version,
                                      frames=0,total=0,ledger={},last=None)
         if snapshot:
@@ -86,16 +87,24 @@ class Session:
                     self.emulator.advanceFrames(self.release_frames)
                     # Assert serializability before committing metadata.
                     result = self.emulator.state()
-                except Exception:
+                    if self.safety_mode == 'firered':
+                        from community.safety import protect_firered_save
+                        protect_firered_save(battery, self._battery())
+                except Exception as error:
                     self.emulator.restore(before)
                     self._restore_battery(battery)
                     self.emulator.frames = frame_number
                     self.emulator.image = old_image
-                    raise  # no ledger entry: retry after repairing the failure
-                record.update(status='applied',button=button,duration=frames,
-                              state_sha256=hashlib.sha256(result).hexdigest())
-                self.data['total'] += 1
-                self.data['last'] = record
+                    from community.safety import UnsafeSaveChange
+                    if isinstance(error, UnsafeSaveChange):
+                        record.update(status='rejected', reason=str(error))
+                    else:
+                        raise  # no ledger entry: retry after repairing the failure
+                else:
+                    record.update(status='applied',button=button,duration=frames,
+                                  state_sha256=hashlib.sha256(result).hexdigest())
+                    self.data['total'] += 1
+                    self.data['last'] = record
         self.data['ledger'][event] = record
         return record
 
