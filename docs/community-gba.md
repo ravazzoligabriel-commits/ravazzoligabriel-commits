@@ -117,12 +117,48 @@ Homebrew state and pixels commit together. For private FireRed storage, the next
 run rebuilds the public view from saved private state after a failed publication.
 Never force-push automatically or fall back to a new game on decryption failure.
 
-Back up the session repository and key. To roll back, disable the turns workflow,
-restore a selected snapshot commit **and its matching image/ledger**, then enable
-it. Reopen only commands deliberately excluded by that rollback. To change ROM,
-begin a separate session; to upgrade mGBA, test a copy privately before migrating.
-Version/ROM mismatch halts rather than silently restarting. Development canary
-state is isolated in the feature branch and consumes real `[gba-test]` Issues.
+### Automatic protection and recovery
+
+In FireRed mode, every **accepted visitor turn** now gets an AES-GCM encrypted
+**pre-turn checkpoint** in the **private storage repository** under
+`.community/backups/turn-000000000123.enc` (substituting the Issue number).
+Only the most recent 20 checkpoint files are retained in the working tree.
+Older copies may remain in private Git history until its retention is managed.
+The cartridge, raw battery, savestates and encryption key are never copied into
+the public profile. Keep the `GBA_STATE_KEY` secret and backed up.
+
+If a valid FireRed saved game's **trainer ID** changes on a turn, the engine
+rolls that turn back and records it as rejected. This helps stop accidental
+replacement of an established trainer when somebody starts and saves another
+game. It is **not a reliable title-screen detector**, does not block navigation
+to the title or an unsaved new-game screen, and cannot protect progress created
+before the first in-game save. GitBoy's single-button commands already prevent
+direct entry of the usual simultaneous-button soft-reset chord.
+
+**To manually recover a game:** open **Actions → Community GBA turns → Run
+workflow**, select `main`, and enter the Issue number in `restore_turn`
+corresponding to the desired *before-that-turn* checkpoint (leave
+`operator_plan` unchecked). A valid recovery restores the private game state
+and screenshot and marks every later already-processed command as `reverted`,
+so historical GitHub Issues are **not replayed** by the next queue sweep.
+Recovery runs never process fresh queued commands; normal scheduled processing
+resumes afterward. Recovery is limited to the default-branch maintainer's
+manual dispatch and requires a compatible ROM, emulator and ledger history.
+Inspect the private commit history and backup directory if the desired Issue's
+checkpoint is outside the most recent 20 turns.
+
+For extraordinary recovery of an older snapshot not in the retained checkpoint
+files, first disable the workflow and perform a controlled rollback of the
+private repository with proper ledger reconciliation, or use a tested restore
+procedure in a separate private checkout. **Do not simply replace
+`.community/session.enc` while old Issues remain**, because it would replay
+commands after that snapshot. Never force-push automatically or fall back to a
+new game on decryption failure.
+
+To change ROM, begin a separate session; to upgrade mGBA, test a copy privately
+before migrating. Version/ROM mismatch halts rather than silently restarting.
+Development canary state is isolated in the feature branch and consumes real
+`[gba-test]` Issues.
 Before merge, a maintainer pushes an engine change to run this development queue;
 default-branch Issue-triggered processing becomes available after merge.
 

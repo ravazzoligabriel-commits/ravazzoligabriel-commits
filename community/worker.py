@@ -6,6 +6,7 @@ from pathlib import Path
 from community.emulator import Emulator
 from community.github import GitHub
 from community.session import Session,decode,encode,key_from_env
+from community.safety import backup_name, save_turn_backups, recover_snapshot
 from community.render import render
 
 def git(root,*args):
@@ -30,23 +31,36 @@ def main():
     parser.add_argument('--mode',choices=['homebrew','firered'],default='homebrew')
     parser.add_argument('--publish',action='store_true')
     parser.add_argument('--operator-plan',help='Private, reviewed maintainer input sequence')
+    parser.add_argument('--restore-turn',type=int,help='Restore encrypted checkpoint made before this Issue (manual dispatch only)')
     parser.add_argument('--canary',action='store_true',help='Development [gba-test] Issue queue; isolated branch state')
     args=parser.parse_args()
     root=Path.cwd(); state_root=Path(args.state_root).resolve()
     if args.mode=='firered' and state_root==root:
         raise ValueError('FireRed requires a separate PRIVATE state repository')
+    if args.restore_turn is not None:
+        if (args.restore_turn <= 0 or args.mode!='firered' or args.canary or args.branch!='main'
+                or args.operator_plan or os.environ.get('GITHUB_EVENT_NAME')!='workflow_dispatch'):
+            raise ValueError('Restore requires a positive Issue number and an exclusive default-branch manual dispatch')
     repo=os.environ['GITHUB_REPOSITORY']
     api=GitHub(repo,os.environ['GH_TOKEN'])
     key=key_from_env()
     state_file='.community/canary.enc' if args.canary else '.community/session.enc'
     path=state_root/state_file
     previous=decode(path.read_bytes(),key) if path.exists() else None
+    restored = args.restore_turn is not None
+    if restored:
+        checkpoint = state_root/'.community'/'backups'/backup_name(args.restore_turn)
+        if not checkpoint.is_file():
+            raise ValueError('Requested private checkpoint does not exist')
+        previous=recover_snapshot(previous,decode(checkpoint.read_bytes(),key),
+                                  args.restore_turn,os.environ['GITHUB_ACTOR'])
     emulator=Emulator(args.core)
     try:
         emulator.loadGame(args.rom)
         session=Session(emulator,previous,
                         boot_frames=3600 if args.mode=='firered' else 120,
-                        release_frames=60 if args.mode=='firered' else 2)
+                        release_frames=60 if args.mode=='firered' else 2,
+                        safety_mode=args.mode)
         prepared=False
         if args.operator_plan:
             if args.canary or args.mode!='firered' or args.branch!='main' or os.environ.get('GITHUB_EVENT_NAME')!='workflow_dispatch':
@@ -62,10 +76,16 @@ def main():
             queue=api.queue()
         # Persistent issues are the queue, not workflow pending slots. A batch
         # has at most 50 turns; scheduled sweeps eventually drain a burst.
-        pending=[i for i in queue if str(i['number']) not in session.data['ledger']][:50]
+        pending=[] if restored else [i for i in queue if str(i['number']) not in session.data['ledger']][:50]
+        backups=[]
         for issue in pending:
-            session.process(issue)
-        if pending or previous is None or prepared:
+            before=session.snapshot() if args.mode=='firered' and not args.canary else None
+            result=session.process(issue)
+            if before is not None and result['status']=='applied':
+                backups.append((issue['number'],encode(before,key)))
+        if backups:
+            save_turn_backups(state_root,backups)
+        if pending or previous is None or prepared or restored:
             path.parent.mkdir(parents=True,exist_ok=True)
             temp=path.with_suffix('.tmp')
             temp.write_bytes(encode(session.snapshot(),key)); temp.replace(path)
@@ -74,7 +94,10 @@ def main():
             if state_root!=root:
                 # Save the pending public presentation privately first. If
                 # public push fails, next run rebuilds it from committed state.
-                commit(state_root,[state_file],'Persist community GBA turns',args.state_branch or 'main')
+                private_paths=[state_file]
+                if (state_root/'.community'/'backups').exists():
+                    private_paths.append('.community/backups')
+                commit(state_root,private_paths,'Persist community GBA turns and encrypted checkpoints',args.state_branch or 'main')
                 paths=['README.md','assets/community']
             else:
                 paths=['README.md','assets/community',state_file]
