@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 30164,
-  "total": 24,
+  "frames": 30236,
+  "total": 25,
   "last": {
-    "issue": 64,
-    "player": "doyeop4746",
-    "created": "2026-11-03T05:54:59Z",
+    "issue": 65,
+    "player": "suzuzu1",
+    "created": "2026-11-03T07:35:29Z",
     "status": "applied",
     "button": "UP",
     "duration": 12,
-    "state_sha256": "8ebd6efb7ab79e50aa111131ce8a84bd595462da93103cea1eb9abb3b909f011"
+    "state_sha256": "f2d50b049994a6076f49abbe1894e479bf908218e02db64897a07bc55edc3bc2"
   },
-  "screen_sha256": "8b603053557ac28c9471a7e448e68bf570d8d5efb47551918f69d48d6d53dd6e",
+  "screen_sha256": "f14c3d1021f357775a45499fcef84b553a3db58e1a0f685124c220b0116878ea",
   "mode": "firered"
 }

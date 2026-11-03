@@ -256,12 +256,21 @@
     "status": "applied"
   },
   {
+    "button": "UP",
+    "created": "2026-11-03T05:54:59Z",
+    "duration": 12,
     "issue": 64,
     "player": "doyeop4746",
-    "created": "2026-11-03T05:54:59Z",
+    "state_sha256": "8ebd6efb7ab79e50aa111131ce8a84bd595462da93103cea1eb9abb3b909f011",
+    "status": "applied"
+  },
+  {
+    "issue": 65,
+    "player": "suzuzu1",
+    "created": "2026-11-03T07:35:29Z",
     "status": "applied",
     "button": "UP",
     "duration": 12,
-    "state_sha256": "8ebd6efb7ab79e50aa111131ce8a84bd595462da93103cea1eb9abb3b909f011"
+    "state_sha256": "f2d50b049994a6076f49abbe1894e479bf908218e02db64897a07bc55edc3bc2"
   }
 ]
