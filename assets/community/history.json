@@ -265,12 +265,21 @@
     "status": "applied"
   },
   {
+    "button": "UP",
+    "created": "2026-11-03T07:35:29Z",
+    "duration": 12,
     "issue": 65,
     "player": "suzuzu1",
-    "created": "2026-11-03T07:35:29Z",
+    "state_sha256": "f2d50b049994a6076f49abbe1894e479bf908218e02db64897a07bc55edc3bc2",
+    "status": "applied"
+  },
+  {
+    "issue": 66,
+    "player": "ttrrttrryqyyw",
+    "created": "2026-11-03T08:11:30Z",
     "status": "applied",
-    "button": "UP",
+    "button": "L",
     "duration": 12,
-    "state_sha256": "f2d50b049994a6076f49abbe1894e479bf908218e02db64897a07bc55edc3bc2"
+    "state_sha256": "605c65444776c42386db9c37e592060c6c54d6e05508b1797355baae3b7eb6b9"
   }
 ]
