@@ -6,13 +6,13 @@
   "frames": 31172,
   "total": 38,
   "last": {
+    "button": "START",
+    "created": "2026-11-03T15:25:01Z",
+    "duration": 12,
     "issue": 83,
     "player": "sjh1302025-wq",
-    "created": "2026-11-03T15:25:01Z",
-    "status": "applied",
-    "button": "START",
-    "duration": 12,
-    "state_sha256": "858176805200eb98929b7f822666b91aebb04581c20f0aa8ce8cb8d77f1b5888"
+    "state_sha256": "858176805200eb98929b7f822666b91aebb04581c20f0aa8ce8cb8d77f1b5888",
+    "status": "applied"
   },
   "screen_sha256": "629952d23656acc1c1dad095704be05d1dcda96b1f3a78f3b23b8f517ac80d49",
   "mode": "firered"
