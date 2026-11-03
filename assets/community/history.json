@@ -206,12 +206,21 @@
     "status": "applied"
   },
   {
+    "button": "L",
+    "created": "2026-11-03T00:50:00Z",
+    "duration": 12,
     "issue": 57,
     "player": "mufalla5",
-    "created": "2026-11-03T00:50:00Z",
+    "state_sha256": "4ac48c0f0d73cd319851cabd831d2aed15c64201f34f6a1ecbb848a548542b72",
+    "status": "applied"
+  },
+  {
+    "issue": 58,
+    "player": "mufalla5",
+    "created": "2026-11-03T00:50:34Z",
     "status": "applied",
-    "button": "L",
+    "button": "LEFT",
     "duration": 12,
-    "state_sha256": "4ac48c0f0d73cd319851cabd831d2aed15c64201f34f6a1ecbb848a548542b72"
+    "state_sha256": "9cc4ce3f07d14f437d47eee139711ac5317ee2a8fdce492b1bea43e4e07db218"
   }
 ]

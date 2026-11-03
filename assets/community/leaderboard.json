@@ -19,20 +19,20 @@
   },
   {
     "rank": 4,
+    "player": "mufalla5",
+    "commands": 2,
+    "profile": "https://github.com/mufalla5"
+  },
+  {
+    "rank": 5,
     "player": "eduualvesss",
     "commands": 1,
     "profile": "https://github.com/eduualvesss"
   },
   {
-    "rank": 5,
+    "rank": 6,
     "player": "Miireee",
     "commands": 1,
     "profile": "https://github.com/Miireee"
-  },
-  {
-    "rank": 6,
-    "player": "mufalla5",
-    "commands": 1,
-    "profile": "https://github.com/mufalla5"
   }
 ]
