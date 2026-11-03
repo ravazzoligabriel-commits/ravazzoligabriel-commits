@@ -355,10 +355,19 @@
     "status": "applied"
   },
   {
+    "created": "2026-11-03T12:17:11Z",
     "issue": 77,
     "player": "joao-bortoluz",
-    "created": "2026-11-03T12:17:11Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
+  },
+  {
+    "issue": 78,
+    "player": "joao-bortoluz",
+    "created": "2026-11-03T12:18:09Z",
+    "status": "applied",
+    "button": "UP",
+    "duration": 12,
+    "state_sha256": "3952bd868260c918979b605217bed069800c444d09b5edd8b89bf65e89008537"
   }
 ]
