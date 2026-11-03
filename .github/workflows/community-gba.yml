@@ -1,5 +1,5 @@
 name: Community GBA turns
-# Regenerate the GitBoy README with the upgraded private control art (v2 PNG assets).
+# Refresh README controls with the classic Game Boy-inspired v3 hardware assets.
 on:
   issues:
     types: [opened, reopened]
