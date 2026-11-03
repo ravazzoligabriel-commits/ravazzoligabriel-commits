@@ -346,12 +346,19 @@
     "status": "applied"
   },
   {
+    "button": "RIGHT",
+    "created": "2026-11-03T12:16:47Z",
+    "duration": 12,
     "issue": 76,
     "player": "joao-bortoluz",
-    "created": "2026-11-03T12:16:47Z",
-    "status": "applied",
-    "button": "RIGHT",
-    "duration": 12,
-    "state_sha256": "5aa36f46cc949a4c437faa63d9ca27056408c4544d00e3f01c474d0f3da28605"
+    "state_sha256": "5aa36f46cc949a4c437faa63d9ca27056408c4544d00e3f01c474d0f3da28605",
+    "status": "applied"
+  },
+  {
+    "issue": 77,
+    "player": "joao-bortoluz",
+    "created": "2026-11-03T12:17:11Z",
+    "status": "rejected",
+    "reason": "One accepted command per player per 30 seconds"
   }
 ]

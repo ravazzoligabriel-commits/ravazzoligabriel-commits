@@ -6,13 +6,13 @@
   "frames": 30884,
   "total": 34,
   "last": {
+    "button": "RIGHT",
+    "created": "2026-11-03T12:16:47Z",
+    "duration": 12,
     "issue": 76,
     "player": "joao-bortoluz",
-    "created": "2026-11-03T12:16:47Z",
-    "status": "applied",
-    "button": "RIGHT",
-    "duration": 12,
-    "state_sha256": "5aa36f46cc949a4c437faa63d9ca27056408c4544d00e3f01c474d0f3da28605"
+    "state_sha256": "5aa36f46cc949a4c437faa63d9ca27056408c4544d00e3f01c474d0f3da28605",
+    "status": "applied"
   },
   "screen_sha256": "d19372562542d980b5723463c5a5803deb59c10c3735b1378c2815cec85aa336",
   "mode": "firered"
