@@ -310,12 +310,21 @@
     "status": "applied"
   },
   {
+    "button": "START",
+    "created": "2026-11-03T11:48:03Z",
+    "duration": 12,
     "issue": 70,
     "player": "lazyboysobusy",
-    "created": "2026-11-03T11:48:03Z",
+    "state_sha256": "87a0d886cc83ead8561eeb53dc8b2d78ad52102ec4093c388c3a440b437627ab",
+    "status": "applied"
+  },
+  {
+    "issue": 71,
+    "player": "lazyboysobusy",
+    "created": "2026-11-03T11:49:41Z",
     "status": "applied",
-    "button": "START",
+    "button": "L",
     "duration": 12,
-    "state_sha256": "87a0d886cc83ead8561eeb53dc8b2d78ad52102ec4093c388c3a440b437627ab"
+    "state_sha256": "8ff537199d3930d594f7c9aa17b136ad8fd479d8632a70d9708871ca304a6ff5"
   }
 ]
