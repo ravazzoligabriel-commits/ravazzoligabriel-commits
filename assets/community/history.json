@@ -254,5 +254,14 @@
     "player": "henrique05melo-spec",
     "state_sha256": "f3ad784983a251c9496dc9ab862f7098e4ed8e039e3d8f1bf3a66449fbfcf720",
     "status": "applied"
+  },
+  {
+    "issue": 64,
+    "player": "doyeop4746",
+    "created": "2026-11-03T05:54:59Z",
+    "status": "applied",
+    "button": "UP",
+    "duration": 12,
+    "state_sha256": "8ebd6efb7ab79e50aa111131ce8a84bd595462da93103cea1eb9abb3b909f011"
   }
 ]
