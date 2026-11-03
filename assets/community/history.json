@@ -224,17 +224,17 @@
     "status": "applied"
   },
   {
+    "created": "2026-11-03T00:50:48Z",
     "issue": 59,
     "player": "mufalla5",
-    "created": "2026-11-03T00:50:48Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
   },
   {
+    "created": "2026-11-03T00:51:02Z",
     "issue": 60,
     "player": "mufalla5",
-    "created": "2026-11-03T00:51:02Z",
-    "status": "rejected",
-    "reason": "One accepted command per player per 30 seconds"
+    "reason": "One accepted command per player per 30 seconds",
+    "status": "rejected"
   }
 ]
