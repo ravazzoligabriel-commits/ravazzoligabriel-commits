@@ -236,5 +236,14 @@
     "player": "mufalla5",
     "reason": "One accepted command per player per 30 seconds",
     "status": "rejected"
+  },
+  {
+    "issue": 62,
+    "player": "henrique05melo-spec",
+    "created": "2026-11-03T01:07:10Z",
+    "status": "applied",
+    "button": "L",
+    "duration": 12,
+    "state_sha256": "d85d5ee94e0907e1dc0507c4dcdb863a26dab355d7a3849bcd303cd8ecba5efd"
   }
 ]
