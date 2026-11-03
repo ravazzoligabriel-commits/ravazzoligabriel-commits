@@ -43,20 +43,20 @@
   },
   {
     "rank": 8,
+    "player": "lazyboysobusy",
+    "commands": 1,
+    "profile": "https://github.com/lazyboysobusy"
+  },
+  {
+    "rank": 9,
     "player": "Lerry1324",
     "commands": 1,
     "profile": "https://github.com/Lerry1324"
   },
   {
-    "rank": 9,
+    "rank": 10,
     "player": "Miireee",
     "commands": 1,
     "profile": "https://github.com/Miireee"
-  },
-  {
-    "rank": 10,
-    "player": "suzuzu1",
-    "commands": 1,
-    "profile": "https://github.com/suzuzu1"
   }
 ]

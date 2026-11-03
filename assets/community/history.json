@@ -292,12 +292,21 @@
     "status": "applied"
   },
   {
+    "button": "B",
+    "created": "2026-11-03T11:36:04Z",
+    "duration": 12,
     "issue": 68,
     "player": "ravazzoligabriel-commits",
-    "created": "2026-11-03T11:36:04Z",
+    "state_sha256": "85a91f462e3db7a95430429f23ac9962c4735ef04837e9e1a88456ec63bdbbb9",
+    "status": "applied"
+  },
+  {
+    "issue": 69,
+    "player": "lazyboysobusy",
+    "created": "2026-11-03T11:47:20Z",
     "status": "applied",
-    "button": "B",
+    "button": "L",
     "duration": 12,
-    "state_sha256": "85a91f462e3db7a95430429f23ac9962c4735ef04837e9e1a88456ec63bdbbb9"
+    "state_sha256": "ba922c02c94149f4922d811e2287b139bdf230bf8071d5513a31722a101fc3ae"
   }
 ]
