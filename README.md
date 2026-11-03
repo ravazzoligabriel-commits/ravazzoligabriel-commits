@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| L · 12 frames | ttrrttrryqyyw | 26 |
+| UP · 12 frames | Lerry1324 | 27 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -76,9 +76,9 @@
 | 5 | [@mufalla5](https://github.com/mufalla5) | **2** |
 | 6 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
 | 7 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
-| 8 | [@Miireee](https://github.com/Miireee) | **1** |
-| 9 | [@suzuzu1](https://github.com/suzuzu1) | **1** |
-| 10 | [@ttrrttrryqyyw](https://github.com/ttrrttrryqyyw) | **1** |
+| 8 | [@Lerry1324](https://github.com/Lerry1324) | **1** |
+| 9 | [@Miireee](https://github.com/Miireee) | **1** |
+| 10 | [@suzuzu1](https://github.com/suzuzu1) | **1** |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 

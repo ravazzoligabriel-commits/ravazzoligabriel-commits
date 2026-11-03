@@ -274,12 +274,21 @@
     "status": "applied"
   },
   {
+    "button": "L",
+    "created": "2026-11-03T08:11:30Z",
+    "duration": 12,
     "issue": 66,
     "player": "ttrrttrryqyyw",
-    "created": "2026-11-03T08:11:30Z",
+    "state_sha256": "605c65444776c42386db9c37e592060c6c54d6e05508b1797355baae3b7eb6b9",
+    "status": "applied"
+  },
+  {
+    "issue": 67,
+    "player": "Lerry1324",
+    "created": "2026-11-03T09:30:03Z",
     "status": "applied",
-    "button": "L",
+    "button": "UP",
     "duration": 12,
-    "state_sha256": "605c65444776c42386db9c37e592060c6c54d6e05508b1797355baae3b7eb6b9"
+    "state_sha256": "7aab6450b732e574f2e9a2b6e9fec5519accb332a34ec171f89f14fb322d9601"
   }
 ]
