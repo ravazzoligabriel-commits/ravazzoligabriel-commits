@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-1275ee2770b48c1c.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-4032d68e3b92390f.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates ~20 seconds after each command</sub>
 
@@ -55,7 +55,7 @@
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| UP · 12 frames | Lerry1324 | 27 |
+| B · 12 frames | ravazzoligabriel-commits | 28 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -69,7 +69,7 @@
 
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
-| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **13** |
+| 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **14** |
 | 🥈 | [@henrique05melo-spec](https://github.com/henrique05melo-spec) | **2** |
 | 🥉 | [@itim245](https://github.com/itim245) | **2** |
 | 4 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **2** |
