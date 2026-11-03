@@ -344,5 +344,14 @@
     "player": "lazyboysobusy",
     "state_sha256": "6749aef61a792c0c985ebc0140a9b3c8e3e0c2cd1923ba19f77e22058de9558e",
     "status": "applied"
+  },
+  {
+    "issue": 76,
+    "player": "joao-bortoluz",
+    "created": "2026-11-03T12:16:47Z",
+    "status": "applied",
+    "button": "RIGHT",
+    "duration": 12,
+    "state_sha256": "5aa36f46cc949a4c437faa63d9ca27056408c4544d00e3f01c474d0f3da28605"
   }
 ]
