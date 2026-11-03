@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-836e021165e5b015.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-6f27bd39e8df5072.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates when GitHub Actions finishes</sub>
 
@@ -75,7 +75,7 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| DOWN · 12 frames | ravazzoligabriel-commits | 37 |
+| START · 12 frames | sjh1302025-wq | 38 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
