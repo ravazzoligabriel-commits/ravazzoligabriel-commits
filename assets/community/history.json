@@ -301,12 +301,12 @@
     "status": "applied"
   },
   {
+    "button": "L",
+    "created": "2026-11-03T11:47:20Z",
+    "duration": 12,
     "issue": 69,
     "player": "lazyboysobusy",
-    "created": "2026-11-03T11:47:20Z",
-    "status": "applied",
-    "button": "L",
-    "duration": 12,
-    "state_sha256": "ba922c02c94149f4922d811e2287b139bdf230bf8071d5513a31722a101fc3ae"
+    "state_sha256": "ba922c02c94149f4922d811e2287b139bdf230bf8071d5513a31722a101fc3ae",
+    "status": "applied"
   }
 ]
