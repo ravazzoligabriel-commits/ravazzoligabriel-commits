@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 30020,
-  "total": 22,
+  "frames": 30092,
+  "total": 23,
   "last": {
-    "issue": 62,
+    "issue": 63,
     "player": "henrique05melo-spec",
-    "created": "2026-11-03T01:07:10Z",
+    "created": "2026-11-03T01:08:06Z",
     "status": "applied",
-    "button": "L",
+    "button": "LEFT",
     "duration": 12,
-    "state_sha256": "d85d5ee94e0907e1dc0507c4dcdb863a26dab355d7a3849bcd303cd8ecba5efd"
+    "state_sha256": "f3ad784983a251c9496dc9ab862f7098e4ed8e039e3d8f1bf3a66449fbfcf720"
   },
-  "screen_sha256": "3ddc6ac5b094bd36698fef3ec8ccd770301c7efb0eff77014aed4ce2bd39542c",
+  "screen_sha256": "e84b053b0074f0d94fd80638b1dd42b9b6c7acd85d2eb674f3560072f6030801",
   "mode": "firered"
 }

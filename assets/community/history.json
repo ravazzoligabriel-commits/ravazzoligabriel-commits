@@ -238,12 +238,21 @@
     "status": "rejected"
   },
   {
+    "button": "L",
+    "created": "2026-11-03T01:07:10Z",
+    "duration": 12,
     "issue": 62,
     "player": "henrique05melo-spec",
-    "created": "2026-11-03T01:07:10Z",
+    "state_sha256": "d85d5ee94e0907e1dc0507c4dcdb863a26dab355d7a3849bcd303cd8ecba5efd",
+    "status": "applied"
+  },
+  {
+    "issue": 63,
+    "player": "henrique05melo-spec",
+    "created": "2026-11-03T01:08:06Z",
     "status": "applied",
-    "button": "L",
+    "button": "LEFT",
     "duration": 12,
-    "state_sha256": "d85d5ee94e0907e1dc0507c4dcdb863a26dab355d7a3849bcd303cd8ecba5efd"
+    "state_sha256": "f3ad784983a251c9496dc9ab862f7098e4ed8e039e3d8f1bf3a66449fbfcf720"
   }
 ]
