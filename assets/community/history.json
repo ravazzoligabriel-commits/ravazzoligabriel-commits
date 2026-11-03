@@ -247,12 +247,12 @@
     "status": "applied"
   },
   {
+    "button": "LEFT",
+    "created": "2026-11-03T01:08:06Z",
+    "duration": 12,
     "issue": 63,
     "player": "henrique05melo-spec",
-    "created": "2026-11-03T01:08:06Z",
-    "status": "applied",
-    "button": "LEFT",
-    "duration": 12,
-    "state_sha256": "f3ad784983a251c9496dc9ab862f7098e4ed8e039e3d8f1bf3a66449fbfcf720"
+    "state_sha256": "f3ad784983a251c9496dc9ab862f7098e4ed8e039e3d8f1bf3a66449fbfcf720",
+    "status": "applied"
   }
 ]
