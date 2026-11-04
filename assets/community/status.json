@@ -6,13 +6,13 @@
   "frames": 31676,
   "total": 45,
   "last": {
+    "button": "LEFT",
+    "created": "2026-11-04T01:28:53Z",
+    "duration": 12,
     "issue": 90,
     "player": "ianfilipe",
-    "created": "2026-11-04T01:28:53Z",
-    "status": "applied",
-    "button": "LEFT",
-    "duration": 12,
-    "state_sha256": "bcb2c7e4b4592055838d5f458eb67563daa46dbe25f9a82e425e430ae3a5c847"
+    "state_sha256": "bcb2c7e4b4592055838d5f458eb67563daa46dbe25f9a82e425e430ae3a5c847",
+    "status": "applied"
   },
   "screen_sha256": "c4184362ad8bc265e69a2fb4e079fc48ac7e8bad571a54195e3692544cfeff15",
   "mode": "firered"
