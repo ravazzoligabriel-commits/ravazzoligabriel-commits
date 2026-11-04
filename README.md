@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-28e82e73e410a129.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-55b1fdf41ede0bb5.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates when GitHub Actions finishes</sub>
 
@@ -75,7 +75,7 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| RIGHT · 12 frames | ianfilipe | 41 |
+| RIGHT · 12 frames | ianfilipe | 43 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -92,13 +92,13 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 | 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **16** |
 | 🥈 | [@lazyboysobusy](https://github.com/lazyboysobusy) | **5** |
 | 🥉 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **4** |
-| 4 | [@henrique05melo-spec](https://github.com/henrique05melo-spec) | **2** |
-| 5 | [@itim245](https://github.com/itim245) | **2** |
-| 6 | [@mufalla5](https://github.com/mufalla5) | **2** |
-| 7 | [@bico2007](https://github.com/bico2007) | **1** |
-| 8 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
-| 9 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
-| 10 | [@ianfilipe](https://github.com/ianfilipe) | **1** |
+| 4 | [@ianfilipe](https://github.com/ianfilipe) | **3** |
+| 5 | [@henrique05melo-spec](https://github.com/henrique05melo-spec) | **2** |
+| 6 | [@itim245](https://github.com/itim245) | **2** |
+| 7 | [@mufalla5](https://github.com/mufalla5) | **2** |
+| 8 | [@bico2007](https://github.com/bico2007) | **1** |
+| 9 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
+| 10 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 

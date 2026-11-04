@@ -19,44 +19,44 @@
   },
   {
     "rank": 4,
+    "player": "ianfilipe",
+    "commands": 3,
+    "profile": "https://github.com/ianfilipe"
+  },
+  {
+    "rank": 5,
     "player": "henrique05melo-spec",
     "commands": 2,
     "profile": "https://github.com/henrique05melo-spec"
   },
   {
-    "rank": 5,
+    "rank": 6,
     "player": "itim245",
     "commands": 2,
     "profile": "https://github.com/itim245"
   },
   {
-    "rank": 6,
+    "rank": 7,
     "player": "mufalla5",
     "commands": 2,
     "profile": "https://github.com/mufalla5"
   },
   {
-    "rank": 7,
+    "rank": 8,
     "player": "bico2007",
     "commands": 1,
     "profile": "https://github.com/bico2007"
   },
   {
-    "rank": 8,
+    "rank": 9,
     "player": "doyeop4746",
     "commands": 1,
     "profile": "https://github.com/doyeop4746"
   },
   {
-    "rank": 9,
+    "rank": 10,
     "player": "eduualvesss",
     "commands": 1,
     "profile": "https://github.com/eduualvesss"
-  },
-  {
-    "rank": 10,
-    "player": "ianfilipe",
-    "commands": 1,
-    "profile": "https://github.com/ianfilipe"
   }
 ]
