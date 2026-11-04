@@ -3,17 +3,17 @@
   "version": "0.10.5",
   "core_sha256": "93ada796a83e00994d57682b304033c5c122a74ac60ebe35ef18cfe53d4e2247",
   "rom_sha256": null,
-  "frames": 31244,
-  "total": 39,
+  "frames": 31316,
+  "total": 40,
   "last": {
-    "button": "UP",
-    "created": "2026-11-03T21:06:21Z",
+    "issue": 85,
+    "player": "bico2007",
+    "created": "2026-11-04T01:16:47Z",
+    "status": "applied",
+    "button": "B",
     "duration": 12,
-    "issue": 84,
-    "player": "rian213",
-    "state_sha256": "c9543f3b16612dac8de00dd0a218459115a99cbbdedfb3c37086412b4eacb235",
-    "status": "applied"
+    "state_sha256": "2513d069b3d1e027cc5875c2a43164c88a19b7f6a661035c0a8976b34ba4c36d"
   },
-  "screen_sha256": "a49269bf4102e15cb779bec112dd620652f4cc4999559b86cd7ce5da3058b561",
+  "screen_sha256": "10a2bc00d4e73c550beba5b5dd196d36b392a59098edfce46ac082bdcbd1b779",
   "mode": "firered"
 }
