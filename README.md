@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-f770df3a0f5285b0.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-28e82e73e410a129.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates when GitHub Actions finishes</sub>
 
@@ -75,7 +75,7 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| B · 12 frames | bico2007 | 40 |
+| RIGHT · 12 frames | ianfilipe | 41 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -98,7 +98,7 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 | 7 | [@bico2007](https://github.com/bico2007) | **1** |
 | 8 | [@doyeop4746](https://github.com/doyeop4746) | **1** |
 | 9 | [@eduualvesss](https://github.com/eduualvesss) | **1** |
-| 10 | [@Lerry1324](https://github.com/Lerry1324) | **1** |
+| 10 | [@ianfilipe](https://github.com/ianfilipe) | **1** |
 
 <sub>All-time accepted commands · Updates automatically · Alphabetical tie-break · Up to 10 players</sub>
 

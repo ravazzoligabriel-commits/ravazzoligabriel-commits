@@ -407,12 +407,21 @@
     "status": "applied"
   },
   {
+    "button": "B",
+    "created": "2026-11-04T01:16:47Z",
+    "duration": 12,
     "issue": 85,
     "player": "bico2007",
-    "created": "2026-11-04T01:16:47Z",
+    "state_sha256": "2513d069b3d1e027cc5875c2a43164c88a19b7f6a661035c0a8976b34ba4c36d",
+    "status": "applied"
+  },
+  {
+    "issue": 86,
+    "player": "ianfilipe",
+    "created": "2026-11-04T01:27:58Z",
     "status": "applied",
-    "button": "B",
+    "button": "RIGHT",
     "duration": 12,
-    "state_sha256": "2513d069b3d1e027cc5875c2a43164c88a19b7f6a661035c0a8976b34ba4c36d"
+    "state_sha256": "d49906b183eca3bc15487ae766523b8183576ac90d2aa4bfefce0d4a8ed8bbfb"
   }
 ]
