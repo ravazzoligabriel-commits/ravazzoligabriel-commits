@@ -11,7 +11,7 @@
 
 [How to play](#how-to-play) · [How it works](docs/community-gba.md)
 
-<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-55b1fdf41ede0bb5.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
+<img src="https://raw.githubusercontent.com/ravazzoligabriel-commits/ravazzoligabriel-commits/main/assets/community/console-ed072a5a11152bb0.png" alt="GitBoy Advanced — actual GBA gameplay captured by mGBA" width="660" />
 
 <sub>Latest game snapshot · updates when GitHub Actions finishes</sub>
 
@@ -75,7 +75,7 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 
 | LAST ACTION | LAST PLAYER | COMMUNITY COMMANDS |
 | :---: | :---: | :---: |
-| RIGHT · 12 frames | ianfilipe | 43 |
+| LEFT · 12 frames | ianfilipe | 45 |
 
 [How to play](#how-to-play) · [Leaderboard](#global-leaderboard--top-10) · [How it works](docs/community-gba.md)
 
@@ -90,9 +90,9 @@ GitHub Actions needs time to run your command and publish the new screen. A busy
 | Rank | Player | Accepted commands |
 | :---: | :--- | ---: |
 | 🥇 | [@ravazzoligabriel-commits](https://github.com/ravazzoligabriel-commits) | **16** |
-| 🥈 | [@lazyboysobusy](https://github.com/lazyboysobusy) | **5** |
-| 🥉 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **4** |
-| 4 | [@ianfilipe](https://github.com/ianfilipe) | **3** |
+| 🥈 | [@ianfilipe](https://github.com/ianfilipe) | **5** |
+| 🥉 | [@lazyboysobusy](https://github.com/lazyboysobusy) | **5** |
+| 4 | [@joao-bortoluz](https://github.com/joao-bortoluz) | **4** |
 | 5 | [@henrique05melo-spec](https://github.com/henrique05melo-spec) | **2** |
 | 6 | [@itim245](https://github.com/itim245) | **2** |
 | 7 | [@mufalla5](https://github.com/mufalla5) | **2** |

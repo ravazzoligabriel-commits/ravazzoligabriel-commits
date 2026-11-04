@@ -425,21 +425,39 @@
     "status": "applied"
   },
   {
+    "button": "RIGHT",
+    "created": "2026-11-04T01:28:13Z",
+    "duration": 12,
     "issue": 87,
     "player": "ianfilipe",
-    "created": "2026-11-04T01:28:13Z",
-    "status": "applied",
-    "button": "RIGHT",
-    "duration": 12,
-    "state_sha256": "e9c8db09ebb832db974ce4fe5c015d90db85b7cde6a608f5b5f91ae1e6c342e3"
+    "state_sha256": "e9c8db09ebb832db974ce4fe5c015d90db85b7cde6a608f5b5f91ae1e6c342e3",
+    "status": "applied"
   },
   {
+    "button": "RIGHT",
+    "created": "2026-11-04T01:28:28Z",
+    "duration": 12,
     "issue": 88,
     "player": "ianfilipe",
-    "created": "2026-11-04T01:28:28Z",
+    "state_sha256": "c5dade0668a46027606845f415dfa0cdf8172f5a84fa602ab5b0b848fa830b70",
+    "status": "applied"
+  },
+  {
+    "issue": 89,
+    "player": "ianfilipe",
+    "created": "2026-11-04T01:28:43Z",
     "status": "applied",
     "button": "RIGHT",
     "duration": 12,
-    "state_sha256": "c5dade0668a46027606845f415dfa0cdf8172f5a84fa602ab5b0b848fa830b70"
+    "state_sha256": "028a483c8abcfb5884d20c8e4fd975e47e50e04926dc83e911f9bf94e568241d"
+  },
+  {
+    "issue": 90,
+    "player": "ianfilipe",
+    "created": "2026-11-04T01:28:53Z",
+    "status": "applied",
+    "button": "LEFT",
+    "duration": 12,
+    "state_sha256": "bcb2c7e4b4592055838d5f458eb67563daa46dbe25f9a82e425e430ae3a5c847"
   }
 ]

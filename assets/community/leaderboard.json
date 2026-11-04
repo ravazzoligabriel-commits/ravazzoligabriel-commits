@@ -7,21 +7,21 @@
   },
   {
     "rank": 2,
+    "player": "ianfilipe",
+    "commands": 5,
+    "profile": "https://github.com/ianfilipe"
+  },
+  {
+    "rank": 3,
     "player": "lazyboysobusy",
     "commands": 5,
     "profile": "https://github.com/lazyboysobusy"
   },
   {
-    "rank": 3,
+    "rank": 4,
     "player": "joao-bortoluz",
     "commands": 4,
     "profile": "https://github.com/joao-bortoluz"
-  },
-  {
-    "rank": 4,
-    "player": "ianfilipe",
-    "commands": 3,
-    "profile": "https://github.com/ianfilipe"
   },
   {
     "rank": 5,
