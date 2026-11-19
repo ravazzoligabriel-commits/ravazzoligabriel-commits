@@ -1,0 +1,11 @@
+{
+  "community": {
+    "as_of": "2026-11-19",
+    "accepted_commands": 46,
+    "readme_blob": "94ae8cdcc69ebc0d1bd49938ef6089d984f41674"
+  },
+  "personal": [
+    {"game": "Hollow Knight", "goals": ["Rest at a bench", "Buy a map", "Defeat a boss"], "done": null},
+    {"game": "Cuphead", "goals": ["Finish a level", "Earn an A rank", "Reach the second isle"], "done": null}
+  ]
+}
